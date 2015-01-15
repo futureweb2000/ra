@@ -15,13 +15,13 @@
 	<header>
 		<input type="text" name="caja" placeholder="Buscar...">
 		<div id="nav2">
-			<a href="#" class="icon-paragraph-justify" id="show">
+			<a href="#" class="icon-paragraph-justify is-active" id="show">
 				
 			</a>
 
-			<!-- <a href="#" class="icon-paragraph-justify" id="hide">
+			<a href="#" class="icon-paragraph-justify not-active" id="hide">
 				
-			</a> -->
+			</a>
 		</div>
 
 
@@ -72,22 +72,62 @@
 	</header>
 
 	<section>
-		<!-- <div class="canvas-menu">
-			<h2></h2>
+		<div class="canvas_menu" id="menuConf">
+			<h3>Futureweb2000@gmail.com</h3>
 			<ul>
-				<li class="canvas-item"></li>
-				<li class="canvas-item"></li>
-				<li class="canvas-item"></li>
-				<li class="canvas-item"></li>
-				<li class="canvas-item"></li>
-				<li class="canvas-item"></li>
-				<li class="canvas-item"></li>
+				<li class="canvas-item">1</li>
+				<li class="canvas-item">1</li>
+				<li class="canvas-item">1</li>
+				<li class="canvas-item">1</li>
+				<li class="canvas-item">1</li>
+				<li class="canvas-item">1</li>
+				<li class="canvas-item">1</li>
+				<li class="canvas-item">1</li>
+				<li class="canvas-item">1</li>
+				
+				
+				
 			</ul>
 
-		</div> -->
+		</div>
 		
 		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis saepe iusto, deleniti facere voluptatem maiores non quo minima optio sed, possimus nihil molestiae, sunt itaque error ex, cumque assumenda voluptatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi natus aliquam harum saepe dolorem error reprehenderit id aliquid repellendus et placeat ipsam repudiandae, laudantium, consequuntur sed deleniti quo eos consectetur.</p>
 	</section>
 	
+
+	<script src="jquery.js"></script>
+
+	<script>
+
+		var $showMenu = document.getElementById("show");
+
+		var $hideMenu = document.getElementById("hide");
+
+		var $menu = document.getElementById("menuConf");
+
+		$showMenu.addEventListener("click", mostrarMenu);
+		$hideMenu.addEventListener("click", ocultarMenu);
+
+		function mostrarMenu(){
+
+			$menu.classList.add("menu-mostrado");
+			$showMenu.classList.add("not-active");
+			$hideMenu.classList.remove("not-active");
+			$hideMenu.classList.add("is-active");
+			
+		}
+
+
+		function ocultarMenu(){
+
+			$menu.classList.remove("menu-mostrado");
+			$showMenu.classList.remove("not-active");
+			$hideMenu.classList.add("not-active");
+			$hideMenu.classList.remove("is-active");
+
+		}
+
+	</script>
+
 </body>
 </html>
