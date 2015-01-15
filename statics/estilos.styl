@@ -129,6 +129,8 @@ header
 	max-width 1200px
 	background #2359A1
 	padding .4em 0
+	
+	
 	#nav1
 		position fixed 
 		bottom 0
@@ -144,22 +146,26 @@ header
 			width 50px
 			display inline-block
 			font-size 1rem
-			margin 0 .4em
-			list-style none
-			
+			border-right 1px solid #C7D3D8 
+			padding 0 .4em
+			list-style none	
+			&:first-child
+				border-left 0px
+			&:last-child
+				border-right 0px
 				
+			
 			.font-img
 				font-size 1.6em
 				color #22bce0
+				margin-top .3em 
 			
 			
 	#nav2
 		position absolute
 		top 0
 		right 0
-		
-		background gray
-		padding .4em
+		margin 0.5em
 		border-radius 50%
 		a
 			color white
