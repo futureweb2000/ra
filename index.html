@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Compra y Vende Sin Comision">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimun-scale=1, maximun-scale=1" />
+	<title>comprar</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="normalize.css">
+
+
+</head>
+<body>
+
+	<header>
+		<input type="text" name="caja" placeholder="Buscar...">
+		<div id="nav2">
+			<a href="#" class="icon-paragraph-justify is-active" id="show">
+				
+			</a>
+
+			<a href="#" class="icon-paragraph-justify not-active" id="hide">
+				
+			</a>
+		</div>
+
+
+
+
+		<nav id="nav1" class="centrar-texto">
+			<ul>
+				<li class="item-nav"><a href="#" class="">
+					<div class="font-img icon-search">
+					</div>
+					<span class="color-enlace">Buscar</span>
+				</a>
+				</li>
+
+				<li class="item-nav"><a href="#" class="">
+					<div class="font-img icon-users">
+					</div>
+					<span class="color-enlace">Cuenta</span>
+				</a>
+				</li>
+
+				
+
+				<li class="item-nav"><a href="#" class="">
+					<div class="font-img icon-bin">
+					</div>
+					<span class="color-enlace">Borrar</span>
+				</a>
+				</li>
+
+
+				<li class="item-nav"><a href="#" class="">
+					<div class="font-img icon-truck">
+					</div>
+					<span class="color-enlace">Enviar</span>
+				</a>
+				</li>	
+
+				<li class="item-nav"><a href="#" class="">
+					<div class="font-img icon-star-half">
+					</div>
+					<span class="color-enlace">Mejores</span>
+				</a>
+				</li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+		<div class="canvas_menu" id="menuConf">
+			<div id="info-usuario">
+			<figure id="logo-usuario">
+				<img src="man.jpg" alt="usuario" width="38" height="38">
+			</figure>
+			<h3>Raul Michel Ramos</h3>
+			</div>
+			<ul>
+				<li class="canvas-item"><a href="#">Principal</a></li>
+				<li class="canvas-item"><a href="#">Encontrados</a></li>
+				<li class="canvas-item"><a href="#">Destacados</a></li>
+				<li class="canvas-item"><a href="#">Mas Caros</a></li>
+				<li class="canvas-item"><a href="#">Por Categoria</a></li>
+				<li class="canvas-item"><a href="#">$$$$$$$$$$$$$$$$$$</a></li>
+				<li class="canvas-item"><a href="#">Mas Caros</a></li>
+				<li class="canvas-item"><a href="#">Por Categoria</a></li>
+				<li class="canvas-item"><a href="#">$$$$$$$$$$$$$$$$$$</a></li>
+				
+				
+				
+			</ul>
+
+		</div>
+		
+		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis saepe iusto, deleniti facere voluptatem maiores non quo minima optio sed, possimus nihil molestiae, sunt itaque error ex, cumque assumenda voluptatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi natus aliquam harum saepe dolorem error reprehenderit id aliquid repellendus et placeat ipsam repudiandae, laudantium, consequuntur sed deleniti quo eos consectetur.</p>
+	</section>
+	
+
+	<script src="jquery.js"></script>
+
+	<script>
+
+		var $showMenu = document.getElementById("show");
+
+		var $hideMenu = document.getElementById("hide");
+
+		var $menu = document.getElementById("menuConf");
+
+		$showMenu.addEventListener("click", mostrarMenu);
+		$hideMenu.addEventListener("click", ocultarMenu);
+
+		function mostrarMenu(){
+
+			$menu.classList.add("menu-mostrado");
+			$showMenu.classList.add("not-active");
+			$hideMenu.classList.remove("not-active");
+			$hideMenu.classList.add("is-active");
+			
+		}
+
+
+		function ocultarMenu(){
+
+			$menu.classList.remove("menu-mostrado");
+			$showMenu.classList.remove("not-active");
+			$hideMenu.classList.add("not-active");
+			$hideMenu.classList.remove("is-active");
+
+		}
+
+	</script>
+
+</body>
+</html>
