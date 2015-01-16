@@ -1,3 +1,5 @@
+
+
 @font-face
   font-family 'icomoon'
   src url('fuentes/icomoon.eot?-fadt6a')
@@ -119,20 +121,31 @@
 
 body
 	font-size 16px
-	background #dfd8d8
-	height 1000px
+	background #eee
+
+ 
 
 a
 	text-decoration none
- 
+   
+
 ul
   padding 0
   margin 0
   list-style none 
 
+#pan-activator
+  width 30%
+  height 100%
+  opacity 0.4
+  
+  background gray
+  position absolute
+  
+  
 header
 	max-width 1200px
-	background #2359A1
+	background #05558d
 	padding .4em 0
 	#nav1
 		position fixed 
@@ -155,7 +168,7 @@ header
 				border-right 0px 
 			.font-img
 				font-size 1.6em
-				color #2359A1
+				color #0769AD
 				margin-top .2em 
 			
 			
@@ -170,11 +183,12 @@ header
 			color white
 			font-size 1.5em
 		
-	input
+	.buscar
 		padding .3em
 		font-size 1em
-		margin 0 auto
+    font-family "Lucida Grande", Lucida, Verdana, sans-serif  
 		width 225px
+    text-shadow 0 -1px 0 #000  
 		display block
 		border-radius .4em
 		border 0px
@@ -199,11 +213,12 @@ header
     border 1 solid #eee
     margin .4em
     border-radius .3em
+
     a
       padding .3em 1em
       display block
       font-size 1.1em
-      color #2359A1
+      color #0769AD
   #info-usuario
     width 100%
 
@@ -225,10 +240,30 @@ header
       margin-right 1em
       
       img
-        
         border 1px solid transparent
         border-radius 50%
-
+.contenedor-item
+  background white
+  
+  .item-posted
+    width 30%
+    display inline-block
+    text-align center
+    .name-item
+      margin 0
+      font-size .9em
+    .categoria-item
+      margin 0
+      font-size .7em
+    .img-item
+      margin 0 auto
+      width 80px
+      background white
+      img
+        border-radius .7em
+    .precio
+      margin 0
+    
 
 .menu-mostrado
   left 0em 
@@ -244,7 +279,6 @@ header
 	
 .centrar-caja
 	margin 0 auto
-
 
 
 .color-enlace

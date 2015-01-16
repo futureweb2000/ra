@@ -5,15 +5,14 @@
 	<meta name="description" content="Compra y Vende Sin Comision">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimun-scale=1, maximun-scale=1" />
 	<title>comprar</title>
-	<link rel="stylesheet" href="estilos.css">
 	<link rel="stylesheet" href="normalize.css">
-
-
+	<link rel="stylesheet" href="estilos.css">
+	
 </head>
 <body>
-
+<div id="pan-activator"></div>
 	<header>
-		<input type="text" name="caja" placeholder="Buscar...">
+		<input type="text" name="caja" placeholder="Buscar..." class="buscar centrar-caja">
 		<div id="nav2">
 			<a href="#" class="icon-paragraph-justify is-active" id="show">
 				
@@ -80,15 +79,13 @@
 			</ul>
 		</nav>
 	</header>
-
-	<section>
-		<div class="canvas_menu" id="menuConf">
+<div class="canvas_menu" id="menuConf">
 
 			<div id="info-usuario">
-			<figure id="logo-usuario">
-				<img src="man.jpg" alt="usuario" width="38" height="38">
-			</figure>
-			<h3>Raul Michel Ramos</h3>
+				<figure id="logo-usuario">
+					<img src="man.jpg" alt="usuario" width="38" height="38">
+				</figure>
+				<h3>Raul Michel Ramos</h3>
 			</div>
 			<ul>
 				<li class="canvas-item"><a href="#">Principal</a></li>
@@ -99,19 +96,55 @@
 				<li class="canvas-item"><a href="#">$$$$$$$$$$$$$$$$$$</a></li>
 				<li class="canvas-item"><a href="#">Mas Caros</a></li>
 				<li class="canvas-item"><a href="#">Por Categoria</a></li>
-				<li class="canvas-item"><a href="#">$$$$$$$$$$$$$$$$$$</a></
-				
-				
+				<li class="canvas-item"><a href="#">$$$$$$$$$$$$$$$$$$</a></li>
+		
 				
 			</ul>
 
 		</div>
-		
-		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis saepe iusto, deleniti facere voluptatem maiores non quo minima optio sed, possimus nihil molestiae, sunt itaque error ex, cumque assumenda voluptatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi natus aliquam harum saepe dolorem error reprehenderit id aliquid repellendus et placeat ipsam repudiandae, laudantium, consequuntur sed deleniti quo eos consectetur.</p>
+
+	<section class="contenedor-item" id="secc">
+		<a href="http://www.google.com">
+		<article class="item-posted">
+			<figure class="img-item">
+				<img src="http://lerablog.org/wp-content/uploads/2013/06/macbook-pro.jpg" alt="Producto" width="80" height="80">
+			</figure>
+			<h3 class="name-item">Macbook Pro Retina</h3>
+			<p class="categoria-item">Animales</p>
+			<p class="precio">$658</p>
+		</article>
+        </a>
+		<article class="item-posted">
+			<figure class="img-item">
+				<img src="http://lerablog.org/wp-content/uploads/2013/06/macbook-pro.jpg" alt="Producto" width="80" height="80">
+			</figure>
+			<h3 class="name-item">Macbook Pro Retina</h3>
+			<p class="categoria-item">Animales</p>
+			<p class="precio">$658</p>
+		</article>
+
+		<article class="item-posted">
+			<figure class="img-item">
+				<img src="http://lerablog.org/wp-content/uploads/2013/06/macbook-pro.jpg" alt="Producto" width="80" height="80">
+			</figure>
+			<h3 class="name-item">Macbook Pro Retina</h3>
+			<p class="categoria-item">Animales</p>
+			<p class="precio">$658</p>
+		</article>
+		<article class="item-posted">
+			<figure class="img-item">
+				<img src="http://lerablog.org/wp-content/uploads/2013/06/macbook-pro.jpg" alt="Producto" width="80" height="80">
+			</figure>
+			<h3 class="name-item">Macbook Pro Retina</h3>
+			<p class="categoria-item">Animales</p>
+			<p class="precio">$658</p>
+		</article>
+
 	</section>
 	
 
 	<script src="jquery.js"></script>
+	<script src="hammer.js"></script>
 
 	<script>
 
@@ -120,6 +153,11 @@
 		var $hideMenu = document.getElementById("hide");
 
 		var $menu = document.getElementById("menuConf");
+		var $activator = document.getElementById("pan-activator");
+		var $body = document.querySelector("body");
+		var activator = new Hammer($activator);
+		var body = new Hammer($body);
+		
 
 		$showMenu.addEventListener("click", mostrarMenu);
 		$hideMenu.addEventListener("click", ocultarMenu);
@@ -142,6 +180,12 @@
 			$hideMenu.classList.remove("is-active");
 
 		}
+		
+
+		activator.on("panright", mostrarMenu);
+		body.on("panleft", ocultarMenu);
+
+	
 
 	</script>
 
