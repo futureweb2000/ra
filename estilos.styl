@@ -127,6 +127,7 @@ a
  
 ul
   padding 0
+  margin 0
   list-style none 
 
 header
@@ -140,9 +141,6 @@ header
 		background white
 		border-top 1px solid gray
 		ul
-			padding 0 
-			margin 0
-			list-style none
 			font-size 0
 		.item-nav
 			width 50px
@@ -154,11 +152,10 @@ header
 			&:first-child
 				border-left 0px
 			&:last-child
-				border-right 0px
-	
+				border-right 0px 
 			.font-img
 				font-size 1.6em
-				color #22bce0
+				color #2359A1
 				margin-top .2em 
 			
 			
@@ -184,7 +181,7 @@ header
 		
 
 .canvas_menu
-  background #eee
+  background #fff
   width 17em
   position fixed
   top 0
@@ -192,14 +189,46 @@ header
   transition .4s
   box-shadow 1px 1px 20px #333
   border-radius 0 0 .5em 0
+
   h3
     width 14.6em
     color white
+
+  .canvas-item
+    background #eee
+    border 1 solid #eee
+    margin .4em
+    border-radius .3em
+    a
+      padding .3em 1em
+      display block
+      font-size 1.1em
+      color #2359A1
+  #info-usuario
+    width 100%
+
     margin 0
     padding .5em 0
     top 0
     background #2359A1
+
+    position relative
+    h3
+      color white
+      margin 0
+      margin-left .3em
+    #logo-usuario
+      position absolute
+      right 0
+      top 0
+      margin 0
+      margin-right 1em
       
+      img
+        
+        border 1px solid transparent
+        border-radius 50%
+
 
 .menu-mostrado
   left 0em 
@@ -215,5 +244,10 @@ header
 	
 .centrar-caja
 	margin 0 auto
+
+
+
+.color-enlace
+  color #D4191A
 
 
