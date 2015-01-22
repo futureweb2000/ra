@@ -1,12 +1,9 @@
-
-
 @font-face
   font-family 'icomoon'
-  src url('fuentes/icomoon.eot?-fadt6a')
-  src url('fuentes/icomoon.eot?#iefix-fadt6a') format('embedded-opentype'),
-    url('fuentes/icomoon.woff?-fadt6a') format('woff'),
-    url('fuentes/icomoon.ttf?-fadt6a') format('truetype'),
-    url('fuentes/icomoon.svg?-fadt6a#icomoon') format('svg')
+  src url('fuentes/icomoon.eot?rft380'),
+      url('fuentes/icomoon.ttf'),
+      url('fuentes/icomoon.svg'),
+      url('fuentes/icomoon.woff')
   font-weight normal
   font-style normal
 
@@ -21,108 +18,100 @@
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
 
-.icon-home3
+.icon-parrafo1
   &:before
-    content "\e902"
+    content "\e600"
+
+.icon-compu
+  &:before
+    content "\e601"
+    color white
 
 .icon-bocina
   &:before
     content "\e91a"
 
-.icon-bell
+.icon-carrito
   &:before
-    content "\e951"
+    content "\e93a"
 
-.icon-user
+.icon-pesos
   &:before
-    content "\e971"
+    content "\e93b"
 
-.icon-users
+.icon-tel
+  &:before
+    content "\e942"
+
+.icon-usuarios
   &:before
     content "\e972"
 
-.icon-user-check
-  &:before
-    content "\e975"
-
-.icon-user-tie
-  &:before
-    content "\e976"
-
-.icon-search
+.icon-buscar
   &:before
     content "\e986"
 
-.icon-cog
+.icon-config
   &:before
     content "\e994"
 
-.icon-bin
+.icon-basura
   &:before
     content "\e9ac"
 
-.icon-bin2
+.icon-airplane
   &:before
-    content "\e9ad"
+    content "\e9af"
 
 .icon-truck
   &:before
     content "\e9b0"
 
-.icon-star-empty
+.icon-lista2
   &:before
-    content "\e9d7"
+    content "\e9bb"
+    color white
+
+.icon-menu
+  &:before
+    content "\e9bd"
+
+.icon-grid-alt
+  &:before
+    content "\e602"
+    color white
+
+
+.icon-grid
+  &:before 
+    content "\e603"
+    color white
+
+
 
 .icon-star-half
   &:before
     content "\e9d8"
 
-.icon-star-full
+.icon-flecha-circulada
   &:before
-    content "\e9d9"
+    content "\ea42"
+    float right
+    font-size 1.3em 
+    vertical-align middle
+    margin-right .6em
 
-.icon-paragraph-justify
-  &:before
-    content "\ea7a"
 
-.icon-facebook2
+.icon-tabla2
   &:before
-    content "\ea8d"
+    content "\ea71"
 
-.icon-twitter2
-  &:before
-    content "\ea92"
-
-.icon-finder
-  &:before
-    content "\eac0"
-
-.icon-lastfm2
-  &:before
-    content "\eacb"
-
-.icon-delicious
-  &:before
-    content "\eacc"
-
-.icon-paypal2
-  &:before
-    content "\ead7"
-
-.icon-paypal3
-  &:before
-    content "\ead8"
-
-.icon-like
-  &:before
-    content "\e600"
 
 
 
 body
-	font-size 16px
-	background #eee
-
+	font-size 16px 
+	background #DDE3E6
  
 
 a
@@ -134,14 +123,7 @@ ul
   margin 0
   list-style none 
 
-#pan-activator
-  width 30%
-  height 100%
-  opacity 0.4
-  
-  background gray
-  position absolute
-  
+
   
 header
 	max-width 1200px
@@ -152,6 +134,7 @@ header
 		bottom 0
 		width 100%
 		background white
+     
 		border-top 1px solid gray
 		ul
 			font-size 0
@@ -169,9 +152,7 @@ header
 			.font-img
 				font-size 1.6em
 				color #0769AD
-				margin-top .2em 
-			
-			
+				margin-top .2em 	
 	#nav2
 		position absolute
 		top 0
@@ -182,7 +163,23 @@ header
 		a
 			color white
 			font-size 1.5em
-		
+	#vistas
+   
+   width 100px
+   margin 0 auto
+   font-size 0
+   p
+    display inline-block
+    font-size 1rem
+    height 30px
+    line-height 30px
+    border 1px solid white
+    background gray
+    width 31%
+    text-align center
+    margin 0 auto
+    margin-right 0
+      
 	.buscar
 		padding .3em
 		font-size 1em
@@ -192,6 +189,8 @@ header
 		display block
 		border-radius .4em
 		border 0px
+  
+  
 		
 
 .canvas_menu
@@ -221,7 +220,6 @@ header
       color #0769AD
   #info-usuario
     width 100%
-
     margin 0
     padding .5em 0
     top 0
@@ -243,27 +241,42 @@ header
         border 1px solid transparent
         border-radius 50%
 .contenedor-item
-  background white
-  
+  background #fff
+  margin 20px auto
+  border 1px solid red
+   
   .item-posted
-    width 30%
-    display inline-block
-    text-align center
-    .name-item
-      margin 0
-      font-size .9em
-    .categoria-item
-      margin 0
-      font-size .7em
-    .img-item
-      margin 0 auto
-      width 80px
-      background white
-      img
-        border-radius .7em
-    .precio
-      margin 0
+    border-bottom 1px solid #22bce0
+    padding .3em .2em
+    overflow hidden
+    margin 20px auto
     
+    
+    .img-item
+      width 70px
+      margin 0 .7em 0 1em
+      
+      background white
+      float left
+      img
+        border-radius .7em 
+    .info-item
+      margin-top .7em
+      
+      .name-item
+        margin 0
+        font-size .8em
+      .categoria-item
+        margin 0
+        font-size .7em
+      
+      .precio
+        margin 0
+    
+.v2
+  display inline-block
+  width 48%
+  box-shadow 2px 2px 5px red
 
 .menu-mostrado
   left 0em 
@@ -280,8 +293,12 @@ header
 .centrar-caja
 	margin 0 auto
 
-
+.color-titulos
+  color #D4191A
 .color-enlace
   color #D4191A
 
-
+.red 
+  position relative
+  right 250px
+  transition .3s

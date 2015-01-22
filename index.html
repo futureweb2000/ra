@@ -10,15 +10,23 @@
 	
 </head>
 <body>
-<div id="pan-activator"></div>
+
+
 	<header>
-		<input type="text" name="caja" placeholder="Buscar..." class="buscar centrar-caja">
+		<!-- <input type="text" name="caja" placeholder="Buscar..." class="buscar centrar-caja"> -->
+		<div id="vistas">
+			
+			<p class="vista1 icon-lista2" id="v1"></p>
+			<p class="lista icon-grid" id="v2"></p>
+			<p class="vista3 icon-compu" id="v3"></p>
+
+		</div>
 		<div id="nav2">
-			<a href="#" class="icon-paragraph-justify is-active" id="show">
+			<a href="#" class="icon-parrafo1 is-active" id="show">
 				
 			</a>
 
-			<a href="#" class="icon-paragraph-justify not-active" id="hide">
+			<a href="#" class="icon-parrafo1 not-active" id="hide">
 				
 			</a>
 		</div>
@@ -29,7 +37,7 @@
 		<nav id="nav1" class="centrar-texto">
 			<ul>
 				<li class="item-nav"><a href="#" class="">
-					<div class="font-img icon-search">
+					<div class="font-img icon-buscar">
 					</div>
 
 					<span class="color-enlace">Buscar</span>
@@ -38,7 +46,7 @@
 				</li>
 
 				<li class="item-nav"><a href="#" class="">
-					<div class="font-img icon-users">
+					<div class="font-img icon-usuarios">
 					</div>
 
 					<span class="color-enlace">Cuenta</span>
@@ -49,7 +57,7 @@
 				
 
 				<li class="item-nav"><a href="#" class="">
-					<div class="font-img icon-bin">
+					<div class="font-img icon-basura">
 					</div>
 
 					<span class="color-enlace">Borrar</span>
@@ -103,91 +111,153 @@
 
 		</div>
 
-	<section class="contenedor-item" id="secc">
-		<a href="http://www.google.com">
-		<article class="item-posted">
-			<figure class="img-item">
-				<img src="http://lerablog.org/wp-content/uploads/2013/06/macbook-pro.jpg" alt="Producto" width="80" height="80">
-			</figure>
-			<h3 class="name-item">Macbook Pro Retina</h3>
-			<p class="categoria-item">Animales</p>
-			<p class="precio">$658</p>
-		</article>
-        </a>
-		<article class="item-posted">
-			<figure class="img-item">
-				<img src="http://lerablog.org/wp-content/uploads/2013/06/macbook-pro.jpg" alt="Producto" width="80" height="80">
-			</figure>
-			<h3 class="name-item">Macbook Pro Retina</h3>
-			<p class="categoria-item">Animales</p>
-			<p class="precio">$658</p>
-		</article>
-
-		<article class="item-posted">
-			<figure class="img-item">
-				<img src="http://lerablog.org/wp-content/uploads/2013/06/macbook-pro.jpg" alt="Producto" width="80" height="80">
-			</figure>
-			<h3 class="name-item">Macbook Pro Retina</h3>
-			<p class="categoria-item">Animales</p>
-			<p class="precio">$658</p>
-		</article>
-		<article class="item-posted">
-			<figure class="img-item">
-				<img src="http://lerablog.org/wp-content/uploads/2013/06/macbook-pro.jpg" alt="Producto" width="80" height="80">
-			</figure>
-			<h3 class="name-item">Macbook Pro Retina</h3>
-			<p class="categoria-item">Animales</p>
-			<p class="precio">$658</p>
-		</article>
-
-	</section>
 	
 
+	<section class="contenedor-item" id="secc">
+		<h3 class="titulo-secccion icon-bullhorn color-titulos"><em>Anuncios</em></h3>
+		
+		<a href="http://www.google.com">
+		<article class="item-posted" id="itemPost">
+
+			<figure class="img-item">
+				<img src="http://lerablog.org/wp-content/uploads/2013/06/macbook-pro.jpg" alt="Producto" width="70" height="70">
+			</figure>
+
+			<div class="info-item icon-flecha-circulada">
+				<h3 class="name-item">Macbook Pro Retina</h3>
+				<p class="categoria-item">Animales</p>
+				<p class="precio">$657</p>
+			</div>
+			
+		</article>
+        </a>
+
+        <a href="http://www.google.com">
+		<article class="item-posted" id="itemPost">
+
+			<figure class="img-item">
+				<img src="http://lerablog.org/wp-content/uploads/2013/06/macbook-pro.jpg" alt="Producto" width="70" height="70">
+			</figure>
+
+			<div class="info-item icon-circle-right">
+				<h3 class="name-item">Macbook Pro Retina</h3>
+				<p class="categoria-item">Animales</p>
+				<p class="precio">$657</p>
+			</div>
+			
+		</article>
+        </a>
+
+
+        <a href="http://www.google.com">
+		<article class="item-posted" id="itemPost">
+
+			<figure class="img-item">
+				<img src="http://lerablog.org/wp-content/uploads/2013/06/macbook-pro.jpg" alt="Producto" width="70" height="70">
+			</figure>
+
+			<div class="info-item icon-circle-right">
+				<h3 class="name-item">Macbook Pro Retina</h3>
+				<p class="categoria-item">Animales</p>
+				<p class="precio">$657</p>
+			</div>
+			
+		</article>
+        </a>
+
+
+        <a href="http://www.google.com">
+		<article class="item-posted" id="itemPost">
+
+			<figure class="img-item">
+				<img src="http://lerablog.org/wp-content/uploads/2013/06/macbook-pro.jpg" alt="Producto" width="70" height="70">
+			</figure>
+
+			<div class="info-item icon-circle-right">
+				<h3 class="name-item">Macbook Pro Retina</h3>
+				<p class="categoria-item">Animales</p>
+				<p class="precio">$657</p>
+			</div>
+			
+		</article>
+        </a>
+
+
+        <a href="http://www.google.com">
+		<article class="item-posted" id="itemPost">
+
+			<figure class="img-item">
+				<img src="http://lerablog.org/wp-content/uploads/2013/06/macbook-pro.jpg" alt="Producto" width="70" height="70">
+			</figure>
+
+			<div class="info-item icon-circle-right">
+				<h3 class="name-item">Macbook Pro Retina</h3>
+				<p class="categoria-item">Animales</p>
+				<p class="precio">$657</p>
+			</div>
+			
+		</article>
+        </a>
+
+
+        <a href="http://www.google.com">
+		<article class="item-posted" id="itemPost">
+
+			<figure class="img-item">
+				<img src="http://lerablog.org/wp-content/uploads/2013/06/macbook-pro.jpg" alt="Producto" width="70" height="70">
+			</figure>
+
+			<div class="info-item icon-circle-right">
+				<h3 class="name-item">Macbook Pro Retina</h3>
+				<p class="categoria-item">Animales</p>
+				<p class="precio">$657</p>
+			</div>
+			
+		</article>
+        </a>
+
+
+        <a href="http://www.google.com">
+		<article class="item-posted" id="itemPost">
+
+			<figure class="img-item">
+				<img src="http://lerablog.org/wp-content/uploads/2013/06/macbook-pro.jpg" alt="Producto" width="70" height="70">
+			</figure>
+
+			<div class="info-item icon-circle-right">
+				<h3 class="name-item">Macbook Pro Retina</h3>
+				<p class="categoria-item">Animales</p>
+				<p class="precio">$657</p>
+			</div>
+			
+		</article>
+        </a>
+
+        <a href="http://www.google.com">
+		<article class="item-posted" id="itemPost">
+
+			<figure class="img-item">
+				<img src="http://lerablog.org/wp-content/uploads/2013/06/macbook-pro.jpg" alt="Producto" width="70" height="70">
+			</figure>
+
+			<div class="info-item icon-circle-right">
+				<h3 class="name-item">Macbook Pro Retina</h3>
+				<p class="categoria-item">Animales</p>
+				<p class="precio">$657</p>
+			</div>
+			
+		</article>
+        </a>
+		
+	</section>
+
+
+
+<br><br>
 	<script src="jquery.js"></script>
 	<script src="hammer.js"></script>
 
-	<script>
-
-		var $showMenu = document.getElementById("show");
-
-		var $hideMenu = document.getElementById("hide");
-
-		var $menu = document.getElementById("menuConf");
-		var $activator = document.getElementById("pan-activator");
-		var $body = document.querySelector("body");
-		var activator = new Hammer($activator);
-		var body = new Hammer($body);
-		
-
-		$showMenu.addEventListener("click", mostrarMenu);
-		$hideMenu.addEventListener("click", ocultarMenu);
-
-		function mostrarMenu(){
-
-			$menu.classList.add("menu-mostrado");
-			$showMenu.classList.add("not-active");
-			$hideMenu.classList.remove("not-active");
-			$hideMenu.classList.add("is-active");
-			
-		}
-
-
-		function ocultarMenu(){
-
-			$menu.classList.remove("menu-mostrado");
-			$showMenu.classList.remove("not-active");
-			$hideMenu.classList.add("not-active");
-			$hideMenu.classList.remove("is-active");
-
-		}
-		
-
-		activator.on("panright", mostrarMenu);
-		body.on("panleft", ocultarMenu);
-
-	
-
-	</script>
+	<script src="main.js"></script>
 
 </body>
 </html>
