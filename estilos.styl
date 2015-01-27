@@ -30,6 +30,7 @@
 .icon-bocina
   &:after
     content "\e91a"
+    margin-left .3em
 
 .icon-carrito
   &:before
@@ -96,8 +97,7 @@
 .icon-flecha-circulada
   &:before
     content "\ea42"
-    float right
-    font-size 1.3em 
+    float right 
     vertical-align middle
     margin-right .6em
 
@@ -164,31 +164,33 @@ header
 			color white
 			font-size 1.5em
 	#vistas
-   
-   width 120px
-   margin 0 auto
-   font-size 0
-   p
-    display inline-block
-    font-size 1.2rem
-    height 30px
-    line-height 30px
-    border 1px solid white
-    background gray
-    width 31%
-    text-align center
+    width 120px
     margin 0 auto
-    margin-right 0
+    font-size 0
+    
+    p
+      display inline-block
+      font-size 1.2rem
+      height 30px
+      line-height 30px
+      border 1px solid white
+      box-shadow inset 0 0 10px rgba(0,0,0, 0.9), rgba(255,255,255,0.9) 0 1px 5px
+      width 31%
+      text-align center
+      margin 0 auto
+      margin-right 0
+      &:last-child
+        border-radius 0 .3em .3em 0
+      &:first-child
+        border-radius .3em 0 0 .3em 
       
-	.buscar
-		padding .3em
-		font-size 1em
-    font-family "Lucida Grande", Lucida, Verdana, sans-serif  
-		width 225px
-    text-shadow 0 -1px 0 #000  
-		display block
-		border-radius .4em
-		border 0px
+  .buscar
+    padding .3em
+    width 225px
+    display block
+    margin 0 auto  
+    border-radius .4em
+    border 0px
   
   
 		
@@ -240,22 +242,26 @@ header
         border 1px solid transparent
         border-radius 50%
 .contenedor-item
-  background #fff
   margin 20px auto
   border 1px solid red
-   
-  .item-posted
+  overflow hidden
+  .titulo-secccion
+    font-size 1.4em
+    margin 0
+    border-bottom 2px solid #000
+    padding .3em .5em
+    background #fff
+    
+  .item
     border-bottom 1px solid gray
     padding .3em .2em
     overflow hidden
-    margin 20px auto
-    
+    background #fff
     
     .img-item
-      width 70px
+      width 100px
       margin 0 .7em 0 1em
       background white
-      
       img
         float left
         border-radius .7em 
@@ -267,14 +273,28 @@ header
       .name-item
         font-size .8em
       .categoria-item
-        font-size .7em
-      
+        &:before
+          font-size 1.3em
+          
 .v2
-  display inline-block
-  width 48%
+  border-bottom 1px solid gray
+  background #fff
   box-shadow 2px 2px 10px gray
   text-align center
-  border-radius 10px
+  border-radius .5em
+  float left
+  width 44%
+  margin 10px 2%
+  
+  .categoria-item
+    display none
+  
+  
+        
+  
+  
+  
+  
   
   figure
     display inline-block
@@ -282,11 +302,8 @@ header
     
   .info-item
     display block
-  
-  
-
-  &:before
-    display none
+ 
+    
   
     
   
@@ -311,6 +328,7 @@ header
 
 .color-titulos
   color #D4191A
+  
 .color-enlace
   color #D4191A
 

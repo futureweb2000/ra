@@ -1,22 +1,29 @@
 		var $showMenu = document.getElementById("show");
 		var $menu = document.getElementById("menuConf");
-		var $vistaUno = document.getElementById("v1");
-		var $vistaDos = document.getElementById("v2");
-		var $vistaTres = document.getElementById("v3");
-		var $art = document.getElementById("itemPost");
 		var $body = document.querySelector("body");
+		
 		
 
 		var body = new Hammer($body);
 		
 
 		$showMenu.addEventListener("click", mostrarMenu);
-		$vistaDos.addEventListener("click", cambiarVista2)
+		
+		$("#v2").click(function(){
 
-		function cambiarVista2(){
+			$(".item-posted").addClass("v2");
+			$(".item-posted").removeClass("item");
+			
 
-			$art.classList.toggle("v2");
-		}
+		})
+
+		$("#v1").click(function(){
+			$(".item-posted").addClass("item");
+			$(".item-posted").removeClass("v2");
+			
+			
+
+		})
 
 		function mostrarMenu(){
 
@@ -32,10 +39,9 @@
 
 
 		body.on("panleft", ocultarMenu);
-	
-			
 
-			$('#target').keydown(function(data) {
-  console.log(data.which.ToUppercase());
-});
-  
+
+
+
+
+
