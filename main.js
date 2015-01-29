@@ -13,14 +13,36 @@
 
 			$(".item-posted").addClass("v2");
 			$(".item-posted").removeClass("item");
+			$(".item-posted").removeClass("v3");
 			
 
 		})
 
+
+
+// animaciooon
+// 		$( "h3" ).click(function() {
+//   $( "article" ).animate({
+//     opacity: 0.25,
+//     left: 0,
+//     height: "toggle"
+//   }, 200, function() {
+//     // Animation complete.
+//   });
+// });
+
 		$("#v1").click(function(){
 			$(".item-posted").addClass("item");
 			$(".item-posted").removeClass("v2");
+			$(".item-posted").removeClass("v3");
 			
+
+		})
+
+		$("#v3").click(function(){
+			$(".item-posted").removeClass("item");
+			$(".item-posted").removeClass("v2");
+			$(".item-posted").addClass("v3");
 			
 
 		})
