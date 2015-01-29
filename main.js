@@ -15,9 +15,20 @@
 			$(".item-posted").removeClass("item");
 			$(".item-posted").removeClass("v3");
 			
+		});
 
-		})
 
+		$(".botonBuscar").click(function(){
+			$("#buscar-wrap").fadeIn();
+			$("#buscar-wrap").addClass("buscar-activo");
+			$("#buscar-wrap").remooveClass("buscar");
+				
+		});
+
+		$("#cancel").click(function(){
+			$("#buscar-wrap").fadeOut();
+	
+		});
 
 
 // animaciooon
