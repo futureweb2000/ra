@@ -10,15 +10,16 @@
 		$showMenu.addEventListener("click", mostrarMenu);
 		
 		$("#v2").click(function(){
-
+			
+			$(".item-posted").removeClass("v3");
 			$(".item-posted").addClass("v2");
 			$(".item-posted").removeClass("item");
-			$(".item-posted").removeClass("v3");
 			
 		});
 
 
 		$(".botonBuscar").click(function(){
+			
 			$("#buscar-wrap").fadeIn();
 			$("#buscar-wrap").addClass("buscar-activo");
 			$("#buscar-wrap").remooveClass("buscar");
