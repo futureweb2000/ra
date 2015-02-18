@@ -63,7 +63,6 @@
 
 			$menu.classList.toggle("menu-mostrado");
 			
-			
 		}
 
 		function ocultarMenu(){

@@ -107,7 +107,8 @@
     content "\ea71"
 
 
-
+// html
+//   font-size 80%
 
 body
 	font-size 16px 
@@ -135,19 +136,18 @@ header
 		bottom 0
 		width 100%
 		background white
-     
 		border-top 1px solid gray
 		ul
 			font-size 0
 		.item-nav
 			display inline-block
-			font-size 1rem
+			font-size .95rem
 			border-right 1px solid #C7D3D8 
 			padding 0 .4em
 			list-style none
       a
         width 50px
-      
+       
            	
 			&:first-child
 				border-left 0px
@@ -276,23 +276,37 @@ header
     background #fff
     
   .item
-    border-bottom 1px solid gray
-    padding .3em .2em
+    border-bottom 1px solid lightgray
     overflow hidden
     background #fff
+    padding .5em
     
     .img-item
-      width 100px
-      margin 0 .7em 0 1em
+      width 80px
+      margin 0 .4em
       background white
       img
         float left
-        border-radius .7em 
         width 100%
+        margin-right .8em
     .info-item
-      margin-top .7em
       p,h3
         margin 0
+        
+      h3
+        font-size 1.1em
+        font-weight normal
+      p
+        font-size .9em
+        
+        margin-bottom .2em
+      .precio
+        color brown
+        
+      .estado-producto
+        display none
+        
+        
       .name-item
         font-size .8em
       .categoria-item
@@ -300,36 +314,68 @@ header
           font-size 1.3em
           
 .v2
-  border-bottom 2px solid gray
+  border 1px solid lightgray
   background #fff
-  // box-shadow 2px 2px 10px #000
-  text-align center
-  border-radius .4em
+  border-radius .3em
   float left
-  width 46%
+  width 45%
+
+  padding-bottom .5em
   margin 10px 2%
-   
+
+  p,h3
+    margin 0
+  h3
+    border-bottom 1px solid lightgray
+    width 90%
+    margin 0 auto
+    font-weight normal
+    margin-bottom .3em
+    font-size .8rem
+  .precio
+    color brown
+    text-align left 
+    
+    margin-left 5%
+  .img-item
+      width 80%
+      margin 10px auto
+      img
+        width 100%
   .categoria-item
     display none
+    
+  .estado-producto
+    margin-left 5%
   
 
 .v3
-  
   width 95%
-  margin 10px auto
+  margin 0px auto
+  margin-bottom 10px
   border-radius .4em
-  text-align center
+  text-align left
   background white
-  border-bottom 2px solid gray
+  border 1px solid lightgray
   background #fff
-  // box-shadow 2px 2px 10px black
-  border-radius .4em
+  border-radius .3em
+  padding-bottom .5em
+  h3
+    border-bottom 1px solid lightgray
+    
+  p,h3
+    margin 0
+  .img-item
+    width 100%
+    margin 15px auto
+    img
+      width 100%
   .categoria-item
     display none
-  figure
-    display inline-block
-  .info-item
-    display block
+  .estado-producto
+    margin-left 0
+  .precio
+    color brown
  
     
   
@@ -340,17 +386,28 @@ header
   border-radius .4em
   outline 0px
 
-input:focus
- 
-  transition .4s 
+
+.button
+  font-size 1rem
+  border-radius .4rem
+  background-color #008cba
+  border-color #007295
+  border-bottom 3px solid #007295
+  color white
+  padding .5rem
+  padding-bottom .4rem
+  &:hover
+    background-color #007295
+    border-bottom 3px solid #008cba
+    
 
 .menu-mostrado
   left 0
   
-.is-active
+.activo
   display block
   
-.not-active
+.no-activo
   display none
 
 .centrar-texto
@@ -365,7 +422,17 @@ input:focus
 .color-enlace
   color #D4191A
 
+.color-verde
+  color green
+
 .red 
   position relative
   right 250px
   transition .3s
+  
+
+
+  //hacer media querys para la vista dos
+  //de los productos en donde a partir de 500px 
+    //se cambie a ancho fijo y se muestren mas elementos con inline-block
+      
