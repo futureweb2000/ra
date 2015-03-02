@@ -145,9 +145,10 @@ header
 			border-right 1px solid #C7D3D8 
 			padding 0 .4em
 			list-style none
+        
       a
         width 50px
-       
+      
            	
 			&:first-child
 				border-left 0px
@@ -378,8 +379,24 @@ header
     color brown
  
     
-  
-    
+.features-wrap
+  border-bottom 1px solid #808080
+  .content
+    padding .5rem 1rem
+    margin-bottom 1rem
+    .feature-description
+      color #808080
+  .icon-cont
+    border-radius 50%
+    display inline-block
+    padding .4rem
+    font-size 0    
+    .icon-feature
+      color #808080
+      font-weight 500
+      font-size 3rem 
+      
+      
   
     
 .buscar-activo
@@ -399,7 +416,8 @@ header
   &:hover
     background-color #007295
     border-bottom 3px solid #008cba
-    
+ 
+ //oocss   
 
 .menu-mostrado
   left 0
@@ -414,23 +432,51 @@ header
 	text-align center
 	
 .centrar-caja
-	margin 0 auto
+	margin-left 0
+  margin-right 0 
 
 .color-titulos
   color #D4191A
   
 .color-enlace
   color #D4191A
+  font-size .9em
 
 .color-verde
   color green
 
-.red 
-  position relative
-  right 250px
-  transition .3s
-  
 
+.text-right
+  text-align right
+
+.text-left
+  text-align left
+
+.caja
+  background white
+  border-radius 4px
+
+
+.panel
+  background #fff
+  border 1px solid #ddd
+  width 360px
+  box-shadow 0 1px 1px rgba(0, 0, 0, 0.05)
+  border-radius 4px 4px 0 0
+  &:-primary
+    border 1px solid transparent
+  .panel-body
+    padding .9rem
+    
+  .panel-heading
+    background #2FA4E7
+    border-radius 4px 4px 0 0
+    border-color #ddd
+    padding .6rem .9rem
+    h3
+      margin 0
+      font-size 1.1rem
+      color white
 
   //hacer media querys para la vista dos
   //de los productos en donde a partir de 500px 
