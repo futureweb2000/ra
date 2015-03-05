@@ -18,17 +18,66 @@
 		});
 
 
+		$(".botonCategorias").click(function(){
+			
+			$(".categoria-wrap").slideToggle();
+			
+				
+		});
+
+		$("#lista-categoria1").click(function(){
+			
+			$("#sub1").slideToggle();
+			
+				
+		});
+
+
+		$("#lista-categoria2").click(function(){
+			
+			$("#sub2").slideToggle();
+			
+				
+		});
+
+		$("#lista-categoria3").click(function(){
+			
+			$("#sub3").slideToggle();
+			
+				
+		});
+
+		$("#lista-categoria4").click(function(){
+			
+			$("#sub4").slideToggle();
+			
+				
+		});
+
+
+		$("#lista-categoria5").click(function(){
+			
+			$("#sub5").slideToggle();
+			
+				
+		});
+
+
+
+
+		
+
+		$("#cancel").click(function(){
+			$("#buscar-wrap").fadeOut();
+	
+		});
+
 		$(".botonBuscar").click(function(){
 			
 			$("#buscar-wrap").fadeIn();
 			$("#buscar-wrap").addClass("buscar-activo");
 			$("#buscar-wrap").remooveClass("buscar");
 				
-		});
-
-		$("#cancel").click(function(){
-			$("#buscar-wrap").fadeOut();
-	
 		});
 
 
