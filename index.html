@@ -12,65 +12,22 @@
 </head>
 <body>
 
-		<div class="categoria-wrap c">
+		<div class="categoria-wrap">
+			
+
 			<h3>CATEGORIES</h3>
 			<ul class="prim">
-				<li class="lista-categoria" id="lista-categoria1">Electonics <span class="icon-bocina"></span></li>
+				<li class="lista-categoria" id="lista-categoria1">Electonics <span class="icon-square-plus"></span></li>
 				<ul class="sub" id="sub1">
-					<li>Tv's</li>
-					<li>Stereos</li>
-					<li>Computadoras</li>
-					<li>Sonidos</li>
-					<li>Cables</li>
+					<li class="icon-chevron-right">Tv's</li>
+					<li class="icon-chevron-right">Stereos</li>
+					<li class="icon-chevron-right">Computadoras</li>
+					<li class="icon-chevron-right">Sonidos</li>
+					<li class="icon-chevron-right">Cables</li>
 					
 
 				</ul>
-
-				<li class="lista-categoria" id="lista-categoria2">Ropa <span class="icon-bocina"></span></li>
-				<ul class="sub" id="sub2">
-					<li>Tv's</li>
-					<li>Stereos</li>
-					<li>Computadoras</li>
-					<li>Sonidos de estaxis</li>
-					<li>Cables</li>
-					
-
-				</ul>
-
-				<li class="lista-categoria" id="lista-categoria3">Ropa <span class="icon-bocina"></span></li>
-				<ul class="sub" id="sub3">
-					<li>Tv's</li>
-					<li>Stereos</li>
-					<li>Computadoras</li>
-					<li>Sonidos de estaxis</li>
-					<li>Cables</li>
-					
-
-				</ul>
-
-
-				<li class="lista-categoria" id="lista-categoria4">Computadoras <span class="icon-bocina"></span></li>
-				<ul class="sub" id="sub4">
-					<li>Tv's</li>
-					<li>Stereos</li>
-					<li>Computadoras</li>
-					<li>Sonidos de estaxis</li>
-					<li>Cables</li>
-					
-
-				</ul>
-
-
-				<li class="lista-categoria" id="lista-categoria5">Autos <span class="icon-bocina"></span></li>
-				<ul class="sub" id="sub5">
-					<li>Tv's</li>
-					<li>Stereos</li>
-					<li>Computadoras</li>
-					<li>Sonidos de estaxis</li>
-					<li>Cables</li>
-					
-
-				</ul>
+				
 				
 			</ul>
 		</div>
@@ -78,14 +35,12 @@
 	<header>
 		
 		<div id="vistas">
-			
-			<p class="vista1 icon-lista2" id="v1"></p>
+			<p class="vista1 icon-list" id="v1"></p>
 			<p class="icon-grid" id="v2"></p>
-			<p class="vista3 icon-compu" id="v3"></p>
-
+			<p class="vista3 icon-laptop-chromebook" id="v3"></p>
 		</div>
 		<div id="nav2">
-			<a href="#" class="icon-menu activo" id="show"></a>
+			<a href="#" class="icon-cog activo" id="show"></a>
 		</div>
 
 
@@ -95,37 +50,37 @@
 			<ul>
 				<li class="item-nav botonBuscar">
 					<a href="#">
-						<div class="font-img icon-buscar">
+						<div class="font-img icon-search">
 						</div>
 						<span class="color-enlace">Buscar</span>
 					</a>
 				</li>
 
 				<li class="item-nav ">
-						<div class="font-img icon-usuarios">
+						<div class="font-img icon-shipping">
 						</div>
-						<span class="color-enlace">Cuenta</span>
+						<span class="color-enlace">Vender</span>
 				</li>
 
 				
 
 				<li class="item-nav botonCategorias">
 						<a href="#">
-						<div class="font-img icon-basura">
+						<div class="font-img icon-storage">
 						</div>
-						<span class="color-enlace">categorias</span>
+						<span class="color-enlace">Categorias</span>
 						</a>
 				</li>
 
 
 				<li class="item-nav">
-						<div class="font-img icon-truck">
+						<div class="font-img icon-user">
 						</div>
-						<span class="color-enlace">Enviar</span>
+						<span class="color-enlace">Socios</span>
 				</li>	
 
 				<li class="item-nav">
-						<div class="font-img icon-star-half">
+						<div class="font-img icon-star-outlined">
 						</div>
 						<span class="color-enlace">Mejores</span>
 				</li>
@@ -161,13 +116,17 @@
 	<div id="buscar-wrap" class="buscar-wrap">
 		<div class="caja-buscar">
 			<input type="text" name="caja" placeholder="Buscar..." class="buscar centrar-caja" id="buscars"/>
-			<span class="icon-airplane close"id="cancel"></span>
+			<span class="icon-square-cross close"id="cancel"></span>
 		</div>
 	</div>
 
-
+	<!-- <section class="anuncio">
+		<figure class="anuncio-principal">
+			<img src="img/selling.jpg" alt="">
+		</figure>
+	</section> -->
 	<section class="contenedor-item" id="secc">
-		
+
 		
 			<article class="item-posted item" id="item">
 
@@ -178,7 +137,7 @@
 				<div class="info-item">
 					<h3 class="name-item"><strong>Macbook Pro Retina</strong></h3>
 					<p class="categoria-item">Direccion oeste del Rancho #34
-						<span class="icon-flecha-circulada"></span>
+						<span class="icon-chevron-right"></span>
 					</p>
 					<span class="precio">$657,000</span>
 					<p class="estado-producto color-verde">Usado</p>
@@ -205,21 +164,7 @@
 				
 			</article>
 
-			<article class="item-posted item" id="item">
-
-				<figure class="img-item">
-					<img src="descarga.jpeg" alt="Producto" >
-				</figure>
-
-				<div class="info-item">
-					<h3 class="name-item">Macbook Pro Retina</h3>
-					<p class="categoria-item icon-flecha-circulada">Direccion oeste del Rancho #34
-					</p>
-					<span class="precio">$657,000</span>
-					<p class="estado-producto color-verde">Usado</p>
-				</div>
-				
-			</article>
+			
 
 			<article class="item-posted item" id="item">
 
@@ -260,12 +205,24 @@
 <div class="features-wrap">
 	<div class="content">
 		<p class="icon-cont">
-			<span class="icon-feature icon-truck"></span>
+			<span class="icon-feature icon-local-grocery-store color-azul"></span>
 		</p>
 		<div class="content-description">
 			<h3 class="h3-title">FREE SHIPPING</h3>
 			<p class="feature-description">
-				Lorem  eos odit nisi quibusdam quod mollitia expedita quos, delectus 
+				Everything you need to star selling online 
+			</p>
+		</div>
+	</div>
+
+	<div class="content">
+		<p class="icon-cont">
+			<span class="icon-feature icon-exclamation-triangle color-azul"></span>
+		</p>
+		<div class="content-description">
+			<h3 class="h3-title">Easy Payment</h3>
+			<p class="feature-description">
+				You can pay in oxxo, paypal, 7Eleven etc. 
 			</p>
 		</div>
 	</div>
@@ -273,7 +230,7 @@
 
 	<div class="content">
 		<p class="icon-cont">
-			<span class="icon-feature icon-pesos"></span>
+			<span class="icon-feature icon-attach-money color-azul"></span>
 		</p>
 		<div class="content-description">
 			<h3 class="h3-title">Save your money</h3>
@@ -286,28 +243,20 @@
 
 	<div class="content">
 		<p class="icon-cont">
-			<span class="icon-feature icon-pesos"></span>
+			<span class="icon-feature icon-lifebuoy color-azul"></span>
 		</p>
 		<div class="content-description">
-			<h3 class="h3-title">Save your money</h3>
+			<h3 class="h3-title">Online support 24/7</h3>
 			<p class="feature-description">
-				Lorem ipsum dolor ered rem?
+				lorem inpsum imet dolor hez
 			</p>
 		</div>
 	</div>
-
-	<br>
 </div>
-<div id="b">
-	
-	<p>casre</p>
-
-	<p>xcsvwnejlsrnvqc</p>
-</div>
-
+<br><br><br><br><br><br>
 
 <a href="" class="button">Iniciar Sesion</a>
-<br><br>
+
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script src="hammer.js"></script>
 	<script src="main.js"></script>
