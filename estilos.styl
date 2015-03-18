@@ -1,3 +1,5 @@
+
+
 azulito = #449CCF;
 grisesito = #e3e8ed;
 rojito = #d9230f;
@@ -491,27 +493,33 @@ header
         &:before
           font-size 1.3em
 .time-line
-  
+  padding-left 12px
   .post
     border-left 1px solid gray
-    margin 0 20px 
+    width 100%
+    margin 0 auto
+    padding-bottom 15px
     position relative
-    display flex 
-    justify-content flex-start
+    display -webkit-flex 
+    justify-content -webkit-flex-start
     .triangle
       &::before
         content ""
         border-left 8px solid transparent
         border-top 10px solid transparent
         border-bottom 10px solid transparent
-        border-right 8px solid grisesito
+        border-right 10px solid grisesito
         display inline-block
         position relative
-        top 10px 
-        left 0
+        top 4px 
+        left -14px
 
     .post-info
       color azulito
+      width 100%
+      position relative
+      left -12px
+      top -4px
         
   .logo
     border 1px solid transparent
@@ -523,7 +531,36 @@ header
     img
       border-radius 50%
       width 36px
-  
+ 
+.time-line-vt
+  .post
+    border-bottom 1px solid grisesito
+    display -webkit-flex 
+    justify-content -webkit-space-between
+    margin-bottom 10px
+    padding-bottom 10px
+    .post-info
+      background #fff
+      // border 1px solid grisesito
+      width 98%
+      margin 0 auto
+      h3
+        padding 8px 0
+      .img-published
+        margin 0 
+        padding 0
+        img
+          width 100%
+          border-radius 5px
+    .logo
+      width 36px
+      padding 0
+      margin 0 10px 0 0
+      img 
+        border-radius 10px
+        width 36px
+
+
           
 .v2
   border 1px solid lightgray
@@ -632,7 +669,7 @@ header
 
 .panel
   background #fff
-  border 1px solid grisesito
+  // border 1px solid grisesito
   width 98%
   border-radius 5px
   margin 0 auto
@@ -645,14 +682,14 @@ header
       margin 0
       padding 5px 0 
       border-bottom 1px solid grisesito
-      display flex
-      justify-content space-between
+      display -webkit-flex
+      justify-content -webkit-space-between
       &:last-child
         border-bottom 0
         padding-bottom 0
   .panel-header
-    display flex
-    justify-content space-between
+    display -webkit-flex
+    justify-content -webkit-space-between
     font-family serif
     border-radius 4px 4px 0 0
     border-bottom 1px solid grisesito
@@ -667,10 +704,10 @@ header
     display inline-block
     
 .prueba
-  display flex
+  display -webkit-flex
   background azulito
   color white
-  justify-content space-between 
+  justify-content -webkit-space-between 
 
 //oocss   
 

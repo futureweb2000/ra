@@ -451,26 +451,35 @@ header #vistas p:first-child {
 .contenedor-item .item .info-item .categoria-item:before {
   font-size: 1.3em;
 }
+.time-line {
+  padding-left: 12px;
+}
 .time-line .post {
   border-left: 1px solid #808080;
-  margin: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 15px;
   position: relative;
-  display: flex;
-  justify-content: flex-start;
+  display: -webkit-flex;
+  justify-content: -webkit-flex-start;
 }
 .time-line .post .triangle::before {
   content: "";
   border-left: 8px solid transparent;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-right: 8px solid #e3e8ed;
+  border-right: 10px solid #e3e8ed;
   display: inline-block;
   position: relative;
-  top: 10px;
-  left: 0;
+  top: 4px;
+  left: -14px;
 }
 .time-line .post .post-info {
   color: #449ccf;
+  width: 100%;
+  position: relative;
+  left: -12px;
+  top: -4px;
 }
 .time-line .logo {
   border: 1px solid transparent;
@@ -482,6 +491,38 @@ header #vistas p:first-child {
 }
 .time-line .logo img {
   border-radius: 50%;
+  width: 36px;
+}
+.time-line-vt .post {
+  border-bottom: 1px solid #e3e8ed;
+  display: -webkit-flex;
+  justify-content: -webkit-space-between;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.time-line-vt .post .post-info {
+  background: #fff;
+  width: 98%;
+  margin: 0 auto;
+}
+.time-line-vt .post .post-info h3 {
+  padding: 8px 0;
+}
+.time-line-vt .post .post-info .img-published {
+  margin: 0;
+  padding: 0;
+}
+.time-line-vt .post .post-info .img-published img {
+  width: 100%;
+  border-radius: 5px;
+}
+.time-line-vt .post .logo {
+  width: 36px;
+  padding: 0;
+  margin: 0 10px 0 0;
+}
+.time-line-vt .post .logo img {
+  border-radius: 10px;
   width: 36px;
 }
 .v2 {
@@ -599,7 +640,6 @@ header #vistas p:first-child {
 }
 .panel {
   background: #fff;
-  border: 1px solid #e3e8ed;
   width: 98%;
   border-radius: 5px;
   margin: 0 auto;
@@ -615,16 +655,16 @@ header #vistas p:first-child {
   margin: 0;
   padding: 5px 0;
   border-bottom: 1px solid #e3e8ed;
-  display: flex;
-  justify-content: space-between;
+  display: -webkit-flex;
+  justify-content: -webkit-space-between;
 }
 .panel .panel-body .item-panel-body:last-child {
   border-bottom: 0;
   padding-bottom: 0;
 }
 .panel .panel-header {
-  display: flex;
-  justify-content: space-between;
+  display: -webkit-flex;
+  justify-content: -webkit-space-between;
   font-family: serif;
   border-radius: 4px 4px 0 0;
   border-bottom: 1px solid #e3e8ed;
@@ -638,10 +678,10 @@ header #vistas p:first-child {
   display: inline-block;
 }
 .prueba {
-  display: flex;
+  display: -webkit-flex;
   background: #449ccf;
   color: #fff;
-  justify-content: space-between;
+  justify-content: -webkit-space-between;
 }
 .menu-mostrado {
   left: 0;
