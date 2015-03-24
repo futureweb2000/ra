@@ -544,8 +544,16 @@ header
       // border 1px solid grisesito
       width 98%
       margin 0 auto
-      h3
-        padding 8px 0
+      .post-info-header
+        background grisesito
+        display flex
+        justify-content space-between
+        .post-info-header-name
+          margin 0
+          padding 0
+        .post-info-header-ago
+          font-family "megrim"
+          
       .img-published
         margin 0 
         padding 0
@@ -771,8 +779,50 @@ header
 .contador
   padding 3px 8px
   color white
-  font-family "Helvetica Neue",Helveticasans-serif
+  font-family "Helvetica Neue",Helvetica sans-serif
   font-weight bold
+  
+
+.wrapNuevo
+  &::before
+    content ""
+    display inline-block
+    border-bottom 5px  solid transparent 
+    border-left 5px solid transparent 
+    border-top 5px solid transparent
+    border-right 5px solid rojito
+    position relative
+    left 4px
+    top 1px
+  .nuevo
+    background rojito
+    padding 2px
+    border-radius 3px
+    color white
+    
+
+
+.wrapNuevo-2
+  &::before
+    content ""
+    display inline-block
+    border-bottom 5px  solid transparent 
+    border-left 5px solid transparent 
+    border-top 5px solid transparent
+    border-right 5px solid green
+    position relative
+    left 4px
+    top 1px
+  .nuevo
+    background green
+    padding 2px
+    border-radius 3px
+    color white
+    
+        
+
+    
+  
   
 .text-right
   text-align right
