@@ -1,8 +1,8 @@
 
 
 azulito = #449CCF;
-grisesito = #e3e8ed;
-rojito = #d9230f;
+grisesito = #f1f1f1;
+rojito = #cc181e;
 gris-fuerte = #657483;
 gris-claro = #F7F8F9;
 verde-claro = #3fcf7f;
@@ -239,11 +239,11 @@ verde-claro = #3fcf7f;
 
 
 // html
-//   font-size 80%
+// font-size 80%
 
 body
 	font-size 16px 
-	background white
+	background grisesito
  
 
 a
@@ -266,9 +266,9 @@ ul
       width 100%
   
 header
-	max-width 1200px
+	width 100%
 	background #05558d
-	padding .4em 0
+	padding .4em 0 
   
 	#nav1
 		position fixed 
@@ -291,18 +291,20 @@ header
 			.font-img
 				font-size 1.6rem
 				color #0769AD
-				margin-top .2em 	
+				margin-top .2em 
+  .logo
+    margin 0
+    padding 0
+        	
 	#nav2
-		position absolute
-		top 0
-		right 0
-		margin 0.6em
-		a
-			color white
-			font-size 1.5em
+    position absolute
+    top 0 
+    right 0
+    
+    figure
+      margin 5px
 	#vistas
     width 120px
-    margin 0 auto
     font-size 0
     p
       display inline-block
@@ -323,12 +325,12 @@ header
 
 .categoria-wrap
   background white
-  position absolute
   margin-left auto
   margin-right auto
-  width 90%
+  width 85%
   height auto
   display none
+  position absolute 
   border 1px solid #ddd
   border-radius .3rem
   h3
@@ -379,21 +381,32 @@ header
     display none
   .caja-buscar
     background #05558d
-    height 42px
-    padding-top .5em
-  .buscar
-      padding .4em
-      width 225px
-      border-radius .4em
-      border 0px
-      position relative
-      display block
-      margin 0 auto
+    height 35px
+    padding 8px 0 5px 0
+    display flex
+    justify-content flex-start
+    .buscar
+        
+        width 225px
+        border-radius .1em 0 0 .1em
+        border 0px
+        padding .4em 8px
+        display block
+
+      button
+        border-radius 0
+        border 1px solid #d3d3d3
+        background #f8f8f8
+        color rojito
+        display none
+        padding 0 10px
+        
   .close
     position absolute
     color white
+    font-weight normal
     font-size 1.9rem
-    padding .3em
+    margin .5rem .4rem
     top 0
     right 0
      
@@ -410,39 +423,63 @@ header
   h3
     width 14.6em
     color white
-
-  .canvas-item
-    background #eee
-    border 1 solid #eee
-    margin .4em
-    border-radius .3em
-
-    a
-      padding .3em 1em
+  .canvas-item-wrap
+    margin-bottom .5em
+    width 85%
+    padding .3em 0
+    .canvas-item
+     
       display block
-      font-size 1.1em
-      color #0769AD
+      &.dad
+        color red
+        margin-left .3em
+        margin-bottom .8em
+          &:hover
+            background rojito
+            color white
+        h3
+          font-size .8em
+          color rojito
+          text-transform uppercase
+      &.son
+        font-size .9em
+        margin-left .1em
+        margin-bottom .2em
+        padding 0 0 .3em .2em
+        &:hover
+          background rojito
+          color white 
+          transition .3s
+          cursor pointer
+        .icon-cat
+          font-size 1.2em
+          position relative
+          top 2px
+          color #878787
+          
+          
+      
   #info-usuario
     width 100%
     margin 0
-    padding .69em 0
+    padding .5rem 0
     top 0
-    background #2359A1
-    position relative
-    h3
+    overflow hidden
+    background rojito
+    display flex
+    .name-usuario
       color white
       margin 0
-      margin-left .3em
     #logo-usuario
-      position absolute
-      right 0
-      top .2em
       margin 0
-      margin-right 1em
-      
+      padding .2rem
+      width 38px 
+      height 38px
+      float left //fallBack of display flex 
       img
         border 1px solid transparent
         border-radius 50%
+        width 100%
 .contenedor-item
   width 100%
   margin 20px auto
@@ -512,7 +549,7 @@ header
         display inline-block
         position relative
         top 4px 
-        left -14px
+        right 13px
 
     .post-info
       color azulito
@@ -545,15 +582,23 @@ header
       width 98%
       margin 0 auto
       .post-info-header
-        background grisesito
         display flex
+        padding 8px 0
         justify-content space-between
         .post-info-header-name
-          margin 0
-          padding 0
+          color black
+          .loged
+            font-weight normal
+            font-size .9rem
+            font-style italic
         .post-info-header-ago
           font-family "megrim"
-          
+          margin-right 15px
+      .actions
+        display flex 
+        justify-content flex-start
+        a
+          margin-right 50px
       .img-published
         margin 0 
         padding 0
@@ -679,7 +724,7 @@ header
   background #fff
   // border 1px solid grisesito
   width 98%
-  border-radius 5px
+  border-radius 5px 5px 0 0
   margin 0 auto
   box-shadow 0 1px 1px rgba(0, 0, 0, 0.05)
   &.primary
@@ -745,6 +790,8 @@ header
     
 .border-radius10
   border-radius 10px
+.rounded
+  border-radius 50%
 .centrar-texto
   text-align center
   
@@ -821,7 +868,8 @@ header
     
         
 
-    
+.border-bottom
+  border-bottom 1px solid #e2e2e2  
   
   
 .text-right

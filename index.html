@@ -31,94 +31,150 @@
 				
 			</ul>
 		</div>
-
-	<header>
 		
-		<div id="vistas">
+	<header>
+
+		
+		<!-- <div id="vistas" class="centrar-caja">
 			<p class="vista1 icon-list" id="v1"></p>
 			<p class="icon-grid" id="v2"></p>
 			<p class="vista3 icon-laptop-chromebook" id="v3"></p>
-		</div>
-		<div id="nav2">
-			<a href="#" class="icon-cog activo" id="show"></a>
-		</div>
+		</div> -->
 
 
-
-
-		<nav id="nav1" class="centrar-texto">
-			<ul>
-				<li class="item-nav botonBuscar">
-					<a href="#">
-						<div class="font-img icon-search">
-						</div>
-						<span class="color-enlace">Buscar</span>
-					</a>
-				</li>
-
-				<li class="item-nav ">
-						<div class="font-img icon-shipping">
-						</div>
-						<span class="color-enlace">Vender</span>
-				</li>
-
-				
-
-				<li class="item-nav botonCategorias">
+	<nav id="nav1" class="centrar-texto">
+				<ul>
+					<li class="item-nav botonBuscar">
 						<a href="#">
-						<div class="font-img icon-storage">
-						</div>
-						<span class="color-enlace">Categorias</span>
+							<div class="font-img icon-search">
+							</div>
+							<span class="color-enlace">Buscar</span>
 						</a>
-				</li>
+					</li>
+
+					<li class="item-nav ">
+							<div class="font-img icon-shipping">
+							</div>
+							<span class="color-enlace">Vender</span>
+					</li>
+
+					
+
+					<li class="item-nav botonCategorias">
+							<a href="#">
+							<div class="font-img icon-storage">
+							</div>
+							<span class="color-enlace">Categorias</span>
+							</a>
+					</li>
 
 
-				<li class="item-nav">
-						<div class="font-img icon-user">
-						</div>
-						<span class="color-enlace">Socios</span>
-				</li>	
+					<li class="item-nav">
+							<div class="font-img icon-user">
+							</div>
+							<span class="color-enlace">Socios</span>
+					</li>	
 
-				<li class="item-nav">
-						<div class="font-img icon-star-outlined">
-						</div>
-						<span class="color-enlace">Mejores</span>
-				</li>
+					<li class="item-nav">
+							<div class="font-img icon-star-outlined">
+							</div>
+							<span class="color-enlace">Mejores</span>
+					</li>
 
-			</ul>
-		</nav>
+				</ul>
+
+			</nav>
+
+	
+
+		<div id="nav2">
+			<figure id="show" class="rounded">
+				<img src="man.jpg" class="activo rounded" width="35" height="35">
+			</figure>
+		</div>
+
+
+		<div id="buscar-wrap" class="buscar-wrap">
+			<div class="caja-buscar">
+				<input type="text" name="caja" placeholder="Buscar..." class="buscar centrar-caja" id="buscars"/>
+				<button>Go!</button>
+				<span class="icon-square-cross close"id="cancel"></span>
+			</div>
+		</div>
 	</header>
 	<div class="canvas_menu" id="menuConf">
-
+		<div class="caja-roja no-activo"></div>
 		<div id="info-usuario">
 			<figure id="logo-usuario">
-				<img src="man.jpg" alt="usuario" width="38" height="38">
+				<img src="man.jpg" alt="usuario"  />
 			</figure>
-			<h3>Raul Michel Ramos</h3>
+			<h4 class="name-usuario">Raul Michel Ramos</h4>
 		</div>
-		<ul>
-			<li class="canvas-item"><a href="#">Principal</a></li>
-			<li class="canvas-item"><a href="#">Encontrados</a></li>
-			<li class="canvas-item"><a href="#">Destacados</a></li>
-			<li class="canvas-item"><a href="#">Mas Caros</a></li>
-			<li class="canvas-item"><a href="#">Por Categoria</a></li>
-			<li class="canvas-item"><a href="#">$$$$$$$$$$$$$$$$$$</a></li>
-			<li class="canvas-item"><a href="#">Mas Caros</a></li>
-			<li class="canvas-item"><a href="#">Por Categoria</a></li>
-			<li class="canvas-item"><a href="#">$$$$$$$$$$$$$$$$$$</a></li>
-	
+
+
+		<ul class="canvas-item-wrap border-bottom centrar-caja">
+			<li class="canvas-item dad">
+				<h3>Que ver</h3>
+			</li>
+			<li class="canvas-item son">
+				<span class="icon-shipping icon-cat"></span>
+				Electronics
+			</li>
+
+			<li class="canvas-item son">
+				<span class="icon-local-grocery-store icon-cat"></span>
+				Automoviles
+			</li>
+
+			<li class="canvas-item son">
+				<span class="icon-exclamation-triangle icon-cat"></span>
+				Electronics
+			</li>
+
+			<li class="canvas-item son">
+				<span class="icon-laptop-chromebook icon-cat"></span>
+				Automoviles
+			</li>
+
+			
+		</ul>
+
+
+		<ul class="canvas-item-wrap border-bottom centrar-caja">
+			<li class="canvas-item dad">
+				<h3>Jotitos</h3>
+			</li>
+			<li class="canvas-item son">
+				<span class="icon-shipping icon-cat"></span>
+				Electronics
+			</li>
+
+			
+		</ul>
+
+		<ul class="canvas-item-wrap border-bottom centrar-caja">
+			<li class="canvas-item dad">
+				<h3>Categorias</h3>
+			</li>
+			<li class="canvas-item son">
+				<span class="icon-user icon-cat"></span>
+				Electronics
+			</li>
+
+			<li class="canvas-item son">
+				<span class="icon-local-grocery-store icon-cat"></span>
+				Automoviles
+			</li>
+
+			
+
 			
 		</ul>
 
 	</div>
 
 
-	<div id="buscar-wrap" class="buscar-wrap">
-		<div class="caja-buscar">
-			<input type="text" name="caja" placeholder="Buscar..." class="buscar centrar-caja" id="buscars"/>
-			<span class="icon-square-cross close"id="cancel"></span>
-		</div>
-	</div>
+	
 
 	<!-- <section class="anuncio">
 		<figure class="anuncio-principal">
@@ -126,7 +182,11 @@
 		</figure>
 	</section> -->
 	<section class="contenedor-item" id="secc">
-
+		<div class="img-principal">
+			<figure class="img-wrap" >
+				<img src="promo.png" alt="" style="width:100%;">
+			</figure>
+		</div>
 		
 			<article class="item-posted item" id="item">
 
