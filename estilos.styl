@@ -255,15 +255,29 @@ ul
   padding 0
   margin 0
   list-style none 
-.anuncio  
+.anuncio-principal
   max-width 1000px
   margin 0 auto
-  .anuncio-principal
+ .close-change
+   display flex
+   color white
+   text-decoration underline
+   justify-content space-between
+   font-size .7rem 
+   .cerrar
+     cursor pointer
+   .cambiar
+     cursor pointer  
+  .anuncio-principal-wrap
+    background lightgray
+    border 1px gray
     width 100%
+    height 265px
     margin 0
     padding 0
     img
       width 100%
+      height 100%
   
 header
 	width 100%
@@ -416,10 +430,12 @@ header
   position fixed
   top 0
   left -19em
+  border-right 1px solid lightgray
+  border-bottom 1px solid lightgray
+  
   transition .4s
   box-shadow 1px 1px 20px #333
   border-radius 0 0 .5em 0
-
   h3
     width 14.6em
     color white
@@ -428,7 +444,6 @@ header
     width 85%
     padding .3em 0
     .canvas-item
-     
       display block
       &.dad
         color red
@@ -437,6 +452,7 @@ header
           &:hover
             background rojito
             color white
+            
         h3
           font-size .8em
           color rojito
@@ -445,16 +461,18 @@ header
         font-size .9em
         margin-left .1em
         margin-bottom .2em
-        padding 0 0 .3em .2em
+        padding 0 0 .3em .5em
         &:hover
           background rojito
           color white 
           transition .3s
+          border-radius 3px
           cursor pointer
         .icon-cat
           font-size 1.2em
           position relative
           top 2px
+          margin-right .3rem
           color #878787
           
           
@@ -462,13 +480,32 @@ header
   #info-usuario
     width 100%
     margin 0
-    padding .5rem 0
+    padding .4rem 0
     top 0
     overflow hidden
     background rojito
-    display flex
+    
+    .stack-wrap
+      color #ccc
+      display block
+      width 100%
+      list-style none
+      display flex
+      align-items flex-end
+      margin-top 25px
+      li
+        font-size .6rem
+        margin 0 4px
+        text-transform uppercase
+        span
+          &:last-child
+            font-size 1.1rem
+            color white
+            
+        
+      
     .name-usuario
-      color white
+      color black
       margin 0
     #logo-usuario
       margin 0
@@ -482,11 +519,14 @@ header
         width 100%
 .contenedor-item
   width 100%
-  margin 20px auto
-  overflow hidden //para que todo lo que se salga del height se muestre
+  margin-top 50px
+  background #fff
+  border 1px solid lightgray
+
+  // overflow hidden //para que todo lo que se salga del height se muestre
   .item
     border-bottom 1px solid lightgray
-    overflow hidden
+    // overflow hidden
     background #f5f5f5
     padding .5em
     
@@ -613,8 +653,40 @@ header
         border-radius 10px
         width 36px
 
-
-          
+.anuncios-wrap
+  position fixed
+  right 0 
+  top 50px
+  width 225px
+  background white
+  padding 5px 8px
+  border-radius 0 0 0 .5rem
+  border 1px solid lightgray
+  font-size 12px
+  display none
+  .anuncio-item
+    color black
+    border-bottom 1px solid lightgray
+    padding 5px 0
+    
+    .title
+      margin 0
+      padding 0
+      text-align left
+    .liga 
+      a 
+        color rojito
+        &:hover
+          text-decoration underline
+    .img-anuncio
+      width 98%
+      margin 0
+      padding 0
+      margin-left auto
+      margin-right auto
+      img
+        width 100%
+        height 125px
 .v2
   border 1px solid lightgray
   background #fff

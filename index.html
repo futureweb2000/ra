@@ -24,8 +24,6 @@
 					<li class="icon-chevron-right">Computadoras</li>
 					<li class="icon-chevron-right">Sonidos</li>
 					<li class="icon-chevron-right">Cables</li>
-					
-
 				</ul>
 				
 				
@@ -39,8 +37,8 @@
 			<p class="vista1 icon-list" id="v1"></p>
 			<p class="icon-grid" id="v2"></p>
 			<p class="vista3 icon-laptop-chromebook" id="v3"></p>
-		</div> -->
-
+		</div>
+ -->
 
 	<nav id="nav1" class="centrar-texto">
 				<ul>
@@ -103,12 +101,31 @@
 		</div>
 	</header>
 	<div class="canvas_menu" id="menuConf">
-		<div class="caja-roja no-activo"></div>
+		<div class="caja-roja"></div>
 		<div id="info-usuario">
+			
 			<figure id="logo-usuario">
 				<img src="man.jpg" alt="usuario"  />
 			</figure>
+
 			<h4 class="name-usuario">Raul Michel Ramos</h4>
+
+			<ul class="stack-wrap">
+				<li class="stack-user">
+					<span>Vendidos</span>
+					<span>397</span>
+				</li>
+
+				<li class="stack-user">
+					<span>Tiendas</span>
+					<span>32</span>
+				</li>
+
+				<li class="stack-user">
+					<span>Siguiendo</span>
+					<span>12</span>
+				</li>
+			</ul>
 		</div>
 
 
@@ -140,18 +157,7 @@
 		</ul>
 
 
-		<ul class="canvas-item-wrap border-bottom centrar-caja">
-			<li class="canvas-item dad">
-				<h3>Jotitos</h3>
-			</li>
-			<li class="canvas-item son">
-				<span class="icon-shipping icon-cat"></span>
-				Electronics
-			</li>
-
-			
-		</ul>
-
+		
 		<ul class="canvas-item-wrap border-bottom centrar-caja">
 			<li class="canvas-item dad">
 				<h3>Categorias</h3>
@@ -166,64 +172,65 @@
 				Automoviles
 			</li>
 
+			<li class="canvas-item son">
+				<span class="icon-user icon-cat"></span>
+				Electronics
+			</li>
+
+			<li class="canvas-item son">
+				<span class="icon-local-grocery-store icon-cat"></span>
+				Automoviles
+			</li>
+
+			<li class="canvas-item son">
+				<span class="icon-user icon-cat"></span>
+				Electronics
+			</li>
+
+			<li class="canvas-item son">
+				<span class="icon-local-grocery-store icon-cat"></span>
+				Automoviles
+			</li>
+
+
+			<li class="canvas-item son">
+				<span class="icon-local-grocery-store icon-cat"></span>
+				Automoviles
+			</li>
+
 			
 
 			
 		</ul>
+		<ul class="canvas-item-wrap border-bottom centrar-caja">
+				<li class="canvas-item dad">
+					<h3>Jotitos</h3>
+				</li>
+				<li class="canvas-item son">
+					<span class="icon-shipping icon-cat"></span>
+					Electronics
+				</li>
+
+				
+			</ul>
 
 	</div>
 
 
-	
-
-	<!-- <section class="anuncio">
-		<figure class="anuncio-principal">
-			<img src="img/selling.jpg" alt="">
-		</figure>
-	</section> -->
 	<section class="contenedor-item" id="secc">
-		<div class="img-principal">
-			<figure class="img-wrap" >
-				<img src="promo.png" alt="" style="width:100%;">
+		
+		<div class="anuncio-principal">
+			<span class="no-activo" id="45" data-show>Mostrar Anuncio</span>
+			<figure class="anuncio-principal-wrap" >
+				<div class="close-change">
+					<span class="cambiar">Cambiar Anuncio</span>
+					
+					<span class="cerrar icon-square-cross" data-close>Cerrar</span>
+				</div>
+				<img src="promo.png" alt="" >
 			</figure>
 		</div>
 		
-			<article class="item-posted item" id="item">
-
-				<figure class="img-item">
-					<img src="descarga.jpeg" alt="Producto" >
-				</figure>
-
-				<div class="info-item">
-					<h3 class="name-item"><strong>Macbook Pro Retina</strong></h3>
-					<p class="categoria-item">Direccion oeste del Rancho #34
-						<span class="icon-chevron-right"></span>
-					</p>
-					<span class="precio">$657,000</span>
-					<p class="estado-producto color-verde">Usado</p>
-				</div>
-				
-			</article>
-       	
-       		<article class="item-posted item" id="item">
-
-				<figure class="img-item">
-					<img src="descarga.jpeg" alt="Producto" >
-				</figure>
-
-				<div class="info-item">
-					<h3 class="name-item">Macbook Pro Retina</h3>
-					<p class="categoria-item icon-flecha-circulada">Direccion oeste del Rancho #34
-					</p>
-					<span class="ofer">
-						869,906
-					</span>
-					<span class="precio">$657,000</span>
-					<p class="estado-producto color-verde">Usado</p>
-				</div>
-				
-			</article>
-
 			
 
 			<article class="item-posted item" id="item">
@@ -313,9 +320,39 @@
 		</div>
 	</div>
 </div>
+
+<section class="anuncios-wrap">
+	<article class="anuncio-item">
+		<figure class="img-anuncio center-block">
+			<img src="https://fbexternal-a.akamaihd.net/safe_image.php?d=AQBsXgnzfW1uA997&w=254&h=133&url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQJO55oFxyRciEXho4NtP63OaDRTPmBg96HmYaECNQ_FmwIeeLSvWBENIeS0X1lDT6iw5leIuZF6aob0VZDqmVSjAsfHv9jGG7IM2fc8CsbpSh1EcHGBwnPaDQxMkgDqMq8Vh9rAaE5sUPfL1pDeocg5&cfs=1">
+		</figure>
+		<p class="title">Ropa para todos</p>
+		<p class="liga title"><a href="#">www.ropita.com</a></p>
+		<p class="title small">Viste a la moda con nuestra amplia linea de productos!</p>
+	</article>
+
+
+	<article class="anuncio-item">
+		<figure class="img-anuncio center-block">
+			<img src="http://k45.kn3.net/98883A504.jpg">
+		</figure>
+		<p class="title">Ropa para todos</p>
+		<p class="liga title"><a href="#">www.ropita.com</a></p>
+		<p class="title small">Viste a la moda con nuestra amplia linea de productos!</p>
+	</article>
+
+
+	<article class="anuncio-item">
+		<figure class="img-anuncio center-block">
+			<img src="https://fbexternal-a.akamaihd.net/safe_image.php?d=AQBsXgnzfW1uA997&w=254&h=133&url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQJO55oFxyRciEXho4NtP63OaDRTPmBg96HmYaECNQ_FmwIeeLSvWBENIeS0X1lDT6iw5leIuZF6aob0VZDqmVSjAsfHv9jGG7IM2fc8CsbpSh1EcHGBwnPaDQxMkgDqMq8Vh9rAaE5sUPfL1pDeocg5&cfs=1">
+		</figure>
+		<p class="title">Ropa para todos</p>
+		<p class="liga title"><a href="#">www.ropita.com</a></p>
+		<p class="title small">Viste a la moda con nuestra amplia linea de productos!</p>
+	</article>
+</section>
 <br><br><br><br><br><br>
 
-<a href="" class="button">Iniciar Sesion</a>
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script src="hammer.js"></script>

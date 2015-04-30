@@ -187,17 +187,34 @@ ul {
   margin: 0;
   list-style: none;
 }
-.anuncio {
+.anuncio-principal {
   max-width: 1000px;
   margin: 0 auto;
 }
-.anuncio .anuncio-principal {
+.close-change {
+  display: flex;
+  color: #fff;
+  text-decoration: underline;
+  justify-content: space-between;
+  font-size: 0.7rem;
+}
+.close-change .cerrar {
+  cursor: pointer;
+}
+.close-change .cambiar {
+  cursor: pointer;
+}
+.anuncio-principal-wrap {
+  background: #d3d3d3;
+  border: 1px #808080;
   width: 100%;
+  height: 265px;
   margin: 0;
   padding: 0;
 }
-.anuncio .anuncio-principal img {
+.anuncio-principal-wrap img {
   width: 100%;
+  height: 100%;
 }
 header {
   width: 100%;
@@ -362,6 +379,8 @@ header #vistas p:first-child {
   position: fixed;
   top: 0;
   left: -19em;
+  border-right: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
   transition: 0.4s;
   box-shadow: 1px 1px 20px #333;
   border-radius: 0 0 0.5em 0;
@@ -395,31 +414,50 @@ header #vistas p:first-child {
   font-size: 0.9em;
   margin-left: 0.1em;
   margin-bottom: 0.2em;
-  padding: 0 0 0.3em 0.2em;
+  padding: 0 0 0.3em 0.5em;
 }
 .canvas_menu .canvas-item-wrap .canvas-item.son:hover {
   background: #cc181e;
   color: #fff;
   transition: 0.3s;
+  border-radius: 3px;
   cursor: pointer;
 }
 .canvas_menu .canvas-item-wrap .canvas-item.son .icon-cat {
   font-size: 1.2em;
   position: relative;
   top: 2px;
+  margin-right: 0.3rem;
   color: #878787;
 }
 .canvas_menu #info-usuario {
   width: 100%;
   margin: 0;
-  padding: 0.5rem 0;
+  padding: 0.4rem 0;
   top: 0;
   overflow: hidden;
   background: #cc181e;
+}
+.canvas_menu #info-usuario .stack-wrap {
+  color: #ccc;
+  display: block;
+  width: 100%;
+  list-style: none;
   display: flex;
+  align-items: flex-end;
+  margin-top: 25px;
+}
+.canvas_menu #info-usuario .stack-wrap li {
+  font-size: 0.6rem;
+  margin: 0 4px;
+  text-transform: uppercase;
+}
+.canvas_menu #info-usuario .stack-wrap li span:last-child {
+  font-size: 1.1rem;
+  color: #fff;
 }
 .canvas_menu #info-usuario .name-usuario {
-  color: #fff;
+  color: #000;
   margin: 0;
 }
 .canvas_menu #info-usuario #logo-usuario {
@@ -436,12 +474,12 @@ header #vistas p:first-child {
 }
 .contenedor-item {
   width: 100%;
-  margin: 20px auto;
-  overflow: hidden;
+  margin-top: 50px;
+  background: #fff;
+  border: 1px solid #d3d3d3;
 }
 .contenedor-item .item {
   border-bottom: 1px solid #d3d3d3;
-  overflow: hidden;
   background: #f5f5f5;
   padding: 0.5em;
 }
@@ -583,6 +621,45 @@ header #vistas p:first-child {
 .time-line-vt .post .logo img {
   border-radius: 10px;
   width: 36px;
+}
+.anuncios-wrap {
+  position: fixed;
+  right: 0;
+  top: 50px;
+  width: 225px;
+  background: #fff;
+  padding: 5px 8px;
+  border-radius: 0 0 0 0.5rem;
+  border: 1px solid #d3d3d3;
+  font-size: 12px;
+  display: none;
+}
+.anuncios-wrap .anuncio-item {
+  color: #000;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 5px 0;
+}
+.anuncios-wrap .anuncio-item .title {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.anuncios-wrap .anuncio-item .liga a {
+  color: #cc181e;
+}
+.anuncios-wrap .anuncio-item .liga a:hover {
+  text-decoration: underline;
+}
+.anuncios-wrap .anuncio-item .img-anuncio {
+  width: 98%;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.anuncios-wrap .anuncio-item .img-anuncio img {
+  width: 100%;
+  height: 125px;
 }
 .v2 {
   border: 1px solid #d3d3d3;

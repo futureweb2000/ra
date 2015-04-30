@@ -7,6 +7,7 @@
 		var body = new Hammer($body);
 		
 
+
 		$showMenu.addEventListener("click", mostrarMenu);
 		
 		$("#v2").click(function(){
@@ -123,7 +124,21 @@
 		body.on("panleft", ocultarMenu);
 
 
+		$("[data-close]").on("click", function(){
 
+			$(".anuncio-principal-wrap").fadeOut();
+			$("[data-show]").fadeIn();
+			
+
+			
+		});
+
+		$("[data-show]").on("click", function(){
+
+			$(".anuncio-principal-wrap").fadeIn();
+			$("[data-show]").fadeOut();
+
+		});
 
 
 
