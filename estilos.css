@@ -172,8 +172,7 @@
 .icon-star-outlined:before {
   content: "\e61a";
 }
-body {
-  font-size: 16px;
+font-size 16px {
   background: #f1f1f1;
 }
 a {
@@ -217,55 +216,75 @@ ul {
   height: 100%;
 }
 header {
-  width: 100%;
   background: #05558d;
-  padding: 0.4em 0;
+  width: 100%;
 }
-header #nav1 {
+header .logo {
+  margin-left: 50px;
+}
+header .logo .logo-web {
+  margin: 0;
+}
+#nav1 {
   position: fixed;
   bottom: 0;
   width: 100%;
   background: #fff;
   border-top: 1px solid #808080;
 }
-header #nav1 ul {
+#nav1 ul {
   font-size: 0;
 }
-header #nav1 .item-nav {
+#nav1 .item-nav {
   display: inline-block;
   font-size: 0.86rem;
   border-right: 1px solid #c7d3d8;
   padding: 0 0.4em;
   list-style: none;
 }
-header #nav1 .item-nav:first-child {
+#nav1 .item-nav:first-child {
   border-left: 0px;
 }
-header #nav1 .item-nav:last-child {
+#nav1 .item-nav:last-child {
   border-right: 0px;
 }
-header #nav1 .item-nav .font-img {
+#nav1 .item-nav .font-img {
   font-size: 1.6rem;
   color: #0769ad;
   margin-top: 0.2em;
 }
-header #nav1 .logo {
+#nav1 .logo {
   margin: 0;
   padding: 0;
+  display: inline-block;
 }
-header #nav2 {
+#nav1 .logo span {
+  display: inline-block;
+}
+#nav2 {
+  margin: 0;
+  display: inline-block;
   position: absolute;
   top: 0;
-  right: 0;
 }
-header #nav2 figure {
-  margin: 5px;
+#nav2 right 0 .chat {
+  margin: auto 0;
 }
-header #vistas {
+#nav2 right 0 .chat span {
+  font-size: 19px;
+  color: #fff;
+}
+#nav2 right 0 figure {
+  margin: 5px 0px;
+}
+#nav2 right 0 figure img {
+  border: 2px solid #fff;
+}
+#vistas {
   width: 120px;
   font-size: 0;
 }
-header #vistas p {
+#vistas p {
   display: inline-block;
   font-size: 1.3rem;
   height: 35px;
@@ -278,10 +297,10 @@ header #vistas p {
   margin: 0 auto;
   margin-right: 0;
 }
-header #vistas p:last-child {
+#vistas p:last-child {
   border-radius: 0 0.3em 0.3em 0;
 }
-header #vistas p:first-child {
+#vistas p:first-child {
   border-radius: 0.3em 0 0 0.3em;
 }
 .categoria-wrap {
@@ -626,7 +645,7 @@ header #vistas p:first-child {
   position: fixed;
   right: 0;
   top: 50px;
-  width: 225px;
+  width: 14rem;
   background: #fff;
   padding: 5px 8px;
   border-radius: 0 0 0 0.5rem;
