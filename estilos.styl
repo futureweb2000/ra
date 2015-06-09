@@ -1,9 +1,9 @@
-
+@import 'nib'
 azulito = #449CCF;
-grisesito = #f1f1f1;
+grisesito = #efefef;
 rojito = #cc181e;
 gris-fuerte = #657483;
-gris-claro = #F7F8F9;
+gris-claro = #e9e9e9;
 verde-claro = #3fcf7f;
 @font-face {
   font-family: 'icomoon';
@@ -241,44 +241,20 @@ verde-claro = #3fcf7f;
 // font-size 80%
 
 body
-  // max-width 700px 
+  // max-width 1100px 
 	font-size 16px 
-	background grisesito
-
+	background lightgray
 
 a
-	text-decoration none
-   
+	text-decoration none 
 h3
   margin 0
 ul
   padding 0
   margin 0
   list-style none 
-.anuncio-principal
-  max-width 1000px
-  margin 0 auto
- .close-change
-   display flex
-   color white
-   text-decoration underline
-   justify-content space-between
-   font-size .7rem 
-   .cerrar
-     cursor pointer
-   .cambiar
-     cursor pointer  
-  .anuncio-principal-wrap
-    background lightgray
-    border 1px gray
-    width 100%
-    height 265px
-    margin 0
-    padding 0
-    img
-      width 100%
-      height 100%
-  
+    
+    
 header
   // display flex
   // justify-content space-between
@@ -297,14 +273,17 @@ header
 		width 100%
 		background white
 		border-top 1px solid gray
+    z-index 2  
 		ul
 			font-size 0
 		.item-nav
 			display inline-block
-			font-size .86rem
+			font-size .7rem
 			border-right 1px solid #C7D3D8 
 			padding 0 .4em
 			list-style none
+      .vender-desktop
+        color #f00       
 			&:first-child
 				border-left 0px
 			&:last-child
@@ -313,6 +292,8 @@ header
 				font-size 1.6rem
 				color #0769AD
 				margin-top .2em 
+         
+   
   .logo
     margin 0
     padding 0
@@ -326,8 +307,6 @@ header
    position absolute
    top 0 
    right 0
-   
-    
     .chat
       margin auto 0
       span
@@ -421,21 +400,18 @@ header
     display flex
     justify-content flex-start
     .buscar
-        
         width 225px
         border-radius .1em 0 0 .1em
         border 0px
         padding .4em 8px
         display block
-
       button
         border-radius 0
         border 1px solid #d3d3d3
         background #f8f8f8
         color rojito
         display none
-        padding 0 10px
-        
+        padding 0 10px   
   .close
     position absolute
     color white
@@ -445,59 +421,62 @@ header
     top 0
     right 0
      
-.canvas_menu
-  background #fff
-  width 17em
-  position fixed
-  top 0
-  left -19em
-  border-right 1px solid lightgray
-  border-bottom 1px solid lightgray
-  
-  transition .4s
-  box-shadow 1px 1px 20px #333
-  border-radius 0 0 .5em 0
-  h3
-    width 14.6em
-    color white
-  .canvas-item-wrap
-    margin-bottom .5em
-    width 85%
-    padding .3em 0
-    .canvas-item
-      display block
-      &.dad
-        color red
-        margin-left .3em
-        margin-bottom .8em
+.main
+  display flex
+  background gris-claro
+  // flex-wrap wrap-reverse
+  // max-width 1200px 6634633435
+  .canvas_menu
+    background #fff
+    min-width 225px
+    // position fixed
+    // top 0
+    // left -10em
+    margin-top 30px
+    border-right 1px solid lightgray
+    border-bottom 1px solid lightgray
+    transition .4s
+    // box-shadow 1px 1px 20px #333
+    border-radius 0 0 .5em 0
+    h3
+      width 14.6em
+      color white
+    .canvas-item-wrap
+      margin-bottom .5em
+      width 85%
+      padding .3em 0
+      .canvas-item
+        display block
+        &.dad
+          color red
+          margin-left .3em
+          margin-bottom .8em
+            &:hover
+              background rojito
+              color white
+              
+          h3
+            font-size .8em
+            color rojito
+            text-transform uppercase
+        &.son
+          font-size .9em
+          margin-left .1em
+          margin-bottom .2em
+          padding 0 0 .3em .5em
+          display flex
+          align-items center
           &:hover
             background rojito
-            color white
-            
-        h3
-          font-size .8em
-          color rojito
-          text-transform uppercase
-      &.son
-        font-size .9em
-        margin-left .1em
-        margin-bottom .2em
-        padding 0 0 .3em .5em
-        &:hover
-          background rojito
-          color white 
-          transition .3s
-          border-radius 3px
-          cursor pointer
-        .icon-cat
-          font-size 1.2em
-          position relative
-          top 2px
-          margin-right .3rem
-          color #878787
-          
-          
-      
+            color white 
+            transition .3s
+            border-radius 3px
+            cursor pointer
+          .icon-cat
+            font-size 1.2em
+            top 2px
+            margin-right .3rem
+            color #878787
   #info-usuario
     width 100%
     margin 0
@@ -505,7 +484,6 @@ header
     top 0
     overflow hidden
     background rojito
-    
     .stack-wrap
       color #ccc
       display block
@@ -521,10 +499,7 @@ header
         span
           &:last-child
             font-size 1.1rem
-            color white
-            
-        
-      
+            color white   
     .name-usuario
       color black
       margin 0
@@ -538,58 +513,162 @@ header
         border 1px solid transparent
         border-radius 50%
         width 100%
-.contenedor-item
-  width 100%
-  margin-top 50px
-  background #fff
-  border 1px solid lightgray
-
-  // overflow hidden //para que todo lo que se salga del height se muestre
-  .item
-    border-bottom 1px solid lightgray
-    // overflow hidden
-    background #f5f5f5
-    padding .5em
-    
-    .img-item
-      width 80px
-      margin 0 .4em
-      background white
-      img
-        float left
+  .contenedor-item
+    margin 50px 2px 0 2px
+    background gris-claro
+    border 1px solid lightgray
+    text-align center
+    // overflow hidden //para que todo lo que se salga del height se muestre
+    .anuncio-principal
+      max-width 100%
+      margin 0 auto
+     .close-change
+       display flex
+       color white
+       text-decoration underline
+       justify-content space-between
+       font-size .7rem 
+       .cerrar
+         cursor pointer
+       .cambiar
+         cursor pointer  
+      .anuncio-principal-wrap
+        background lightgray
+        border 1px gray
         width 100%
-        margin-right .8rem
-    .info-item
-      p,h3
+        height 265px
         margin 0
-        
-      h3
-        font-size 1.1rem
-        font-weight normal
-      p
-        font-size .9em
-        display -webkit-flex
-        justify-content -webkit-space-between
-        span
-          font-size 1.2rem
-          -webkit-align-self center
-        
-        margin-bottom .2em
-      .precio
-        color green
-      .ofer
-        text-decoration line-through
-        color red
-        
-      .estado-producto
+        padding 0
+        img
+          width 100%
+          height 100%
+    .item
+      border-bottom 1px solid lightgray
+      border-radius 0 .5em .5em 0
+      background #fff
+      // padding .5em
+      text-align left
+      margin 20px 0
+      position relative
+      &:before
+        position absolute
+        top 100%
+        left 50%
+        height 30px
+        width 3px
+        background rojito
+        content ""  
+      &:last-child:before
         display none
-        
-        
-      .name-item
-        font-size .8em
-      .categoria-item
-        &:before
+      .info-item
+        display flex
+        justify-content flex-start
+        .description-item
+          margin 0
+          
+          .wrap-creado-por
+            display flex
+            align-items center
+            p
+              margin-right 3px
+        .img-item
+          width 140px
+          height 100px
+          margin 0 .4em
+          background white
+          flex none
+          img
+            margin 0
+            width 100%
+            height 100%
+        p
+          font-size .9em
+          display -webkit-flex
+          justify-content -webkit-space-between
+          span
+            font-size 1.2rem
+            -webkit-align-self center
+          
+        .precio
+          border-radius 0 5px 5px 0
+          background rojito
+          margin 0
+          padding 2px 5px
+          display inline-block
+          span
+            color white
+            
+          
+        .ofer
+          text-decoration line-through
+          color red  
+        .estado-producto
+          display none
+        .name-item
           font-size 1.3em
+          font-weight normal
+          margin 0
+          color azulito
+          // font-family megrin
+        .categoria-item
+          margin 0
+          margin-bottom .6em 
+          max-width 420px
+      .item-footer   
+        margin 0
+        display block
+        .actions
+          padding .2em
+          display flex
+          justify-content space-between 
+          align-items flex-end
+          .act
+            margin-left 1em
+           .action
+              color #A6B3BD
+              margin-left 1em
+            .ago
+              margin-right 10px
+              color #aaa
+              font-size .8em
+              font-style italic
+              
+  aside
+    display none
+    flex none
+    width 225px
+    // position fixed
+    // right 0 
+    // top 50px
+    .anuncios-wrap
+      background white
+      padding 5px 8px
+      border-radius 0 0 0 .5rem
+      border 1px solid lightgray
+      font-size 12px
+      .anuncio-item
+        color black
+        border-bottom 1px solid lightgray
+        padding 5px 0
+        
+        .title
+          margin 0
+          padding 0
+          text-align left
+        .liga 
+          a 
+            color rojito
+            &:hover
+              text-decoration underline
+        .img-anuncio
+          width 98%
+          margin 0
+          padding 0
+          margin-left auto
+          margin-right auto
+          img
+            width 100%
+            height 125px
 .time-line
   padding-left 12px
   .post
@@ -674,74 +753,95 @@ header
         border-radius 10px
         width 36px
 
-.anuncios-wrap
-  position fixed
-  right 0 
-  top 50px
-  width 14rem
-  background white
-  padding 5px 8px
-  border-radius 0 0 0 .5rem
-  border 1px solid lightgray
-  font-size 12px
-  display none
-  .anuncio-item
-    color black
-    border-bottom 1px solid lightgray
-    padding 5px 0
-    
-    .title
-      margin 0
-      padding 0
-      text-align left
-    .liga 
-      a 
-        color rojito
-        &:hover
-          text-decoration underline
-    .img-anuncio
-      width 98%
-      margin 0
-      padding 0
-      margin-left auto
-      margin-right auto
-      img
-        width 100%
-        height 125px
 .v2
   border 1px solid lightgray
   background #fff
   border-radius .3em
-  float left
-  width 45%
-
-  padding-bottom .5em
-  margin 10px 2%
-
-  p,h3
+  width 194px
+  vertical-align top
+  display inline-block
+  text-align left
+  // padding-bottom .5em
+  margin 10px 0px
+  margin-right 5px
+    
+  .description-item
+    padding 0 5px
+    
+    .wrap-creado-por
+      display flex
+      align-items center
+      p
+        margin-right 3px
+  .item-footer   
     margin 0
-  h3
+    display block
+    background #f6f6f6
+    border-top 1px solid #e7e7e7
+    padding-top 4px
+    
+    .actions
+      padding 0 0 .2em 0
+      display flex
+      justify-content space-between 
+      align-items center
+      .act
+        margin-left .3em
+        .action
+          color #555
+          font-weight bold
+          font-size .9em
+          &:before
+            color #999
+            margin-left .3em
+          span
+            display none
+            color #555
+      .ago
+        margin-right .3em
+        color #aaa
+        font-size .8em
+        font-style italic
+  .name-item
     border-bottom 1px solid lightgray
-    width 90%
-    margin 0 auto
     font-weight normal
-    margin-bottom .3em
+    margin 5px 0px 5px 0px
     font-size .8rem
   .precio
-    color brown
-    text-align left 
-    
-    margin-left 5%
+    border-radius 0 5px 5px 0
+    background rojito
+    margin 0
+    padding 2px 5px
+    display inline
+    span
+      color white 
   .img-item
-      width 80%
-      margin 10px auto
+      width 100%
+      height 150px
+      margin 0
       img
         width 100%
+        height 100%
+        border-radius 4px 4px 0 0
+  .name-item
+    font-size 1em
+    color azulito
+    // font-family megrin
   .categoria-item
-    display none
+    margin 0px 0 10px 0 
+    font-size .9em
+    background lightgray
+    padding 4px
+    border-radius 4px
+    font-family cursive
+    &:before
+      content '"'
+    &:after
+      content '"'
+      
     
   .estado-producto
-    margin-left 5%
+    // margin-left 5%
   
 
 .v3
@@ -766,11 +866,14 @@ header
     img
       width 100%
   .categoria-item
-    display none
+    color red
   .estado-producto
     margin-left 0
   .precio
-    color brown
+    color white
+    padding 3px 4px
+    border-radius 0 5px 5px 0
+    background rojito
  
     
 .features-wrap
@@ -854,8 +957,124 @@ header
   background azulito
   color white
   justify-content -webkit-space-between 
+.log-wrap
+  
+  max-width 450px
+  background url('/img/back-products.jpg')
+  background lightgray
+  text-align center
+  border-radius 8px
+  padding-bottom 10px
+  margin-bottom 50px
+  box-shadow 0 0 15px gray
+  margin-left 450px
+  display none
+  .top-wrap
 
-//oocss   
+    .head
+      background #F7F9F8
+      border-radius 8px 8px 0 0
+      border-bottom 1px solid gray
+    .intro-description
+      width 390px
+      margin 0 auto 
+      margin-top 10px 
+      h3
+        color white
+        font-size 22px
+        text-shadow 0 0 4px #000
+      p
+        margin 5px 0
+    h2
+      padding 15px
+      margin 0
+      font-family "apple chancery"
+      color rojito
+      font-size 25px
+      
+  .log-ways
+    width 300px
+    margin 0 auto
+    // font-family megrin
+    // font-size 18px
+    .face
+      background #234DA3
+      border-radius 3px
+      position relative
+      margin 15px auto
+      a
+        display block
+        padding 15px
+        color white
+        text-align left
+        padding 15px 60px
+        &:before
+          content "f"
+          color white
+          border-radius 3px 0 0 3px
+          font-weight bold
+          background #2E56AA
+          position absolute 
+          font-size 35px
+          box-shadow 0 0px 10px white
+          top 0 
+          left 0
+          display inline-block
+          padding 4px 18px
+          
+    .separator
+      color green
+      &:before
+        content ""
+        height 1px
+        background green
+        margin-right 4px
+        vertical-align middle
+        display inline-block
+        width 110px 
+      &:after
+        content ""
+        height 1px
+        background green
+        margin-left 4px
+        vertical-align middle
+        display inline-block
+        width 110px  
+
+    form
+      input
+        color #5f5f5f
+        width 98%
+        border 0
+        padding 10px 0px 10px 3px
+        border-radius 3px
+        margin-bottom 7px
+        outline 0
+      input[type="submit"]
+        color white
+        background-image: linear-gradient(#e3262e, #ab171e);
+        background-color: #ab171e;
+        border-bottom-color: #820a0f;
+        border-left-color: #9a1015;
+        border-right-color: #9a1015;
+        border-top-color: #af151b;
+        border-style: solid;
+        border-width: 1px;
+        margin-top 10px
+    .agree
+      font-size 10px 
+      
+  .miembro-log
+    
+    button
+      color #5f5f5f
+      border 0
+      padding 5px 10px
+      border-radius 3px
+      background #fdfdfd
+      
+
+//OOCSS  
 
 .menu-mostrado
   left 0
@@ -883,8 +1102,11 @@ header
     
 .border-radius10
   border-radius 10px
-.rounded
+.avatar
   border-radius 50%
+  width 32px
+  height 32px
+  margin 0
 .centrar-texto
   text-align center
   
@@ -921,7 +1143,12 @@ header
   color white
   font-family "Helvetica Neue",Helvetica sans-serif
   font-weight bold
-  
+.spameado
+  color black
+  font-weight bold
+  &:hover
+    text-decoration underline
+    cursor pointer 
 
 .wrapNuevo
   &::before
@@ -963,7 +1190,15 @@ header
 
 .border-bottom
   border-bottom 1px solid #e2e2e2  
-  
+
+.panel
+  border 1px solid #e4e4e4
+  background white
+  padding 10px
+  border-radius 2px 
+  .paner-heading
+    border-bottom 1px solid #343434
+    
   
 .text-right
   text-align right

@@ -4,11 +4,101 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Compra y Vende Sin Comision">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimun-scale=1, maximun-scale=1" />
-	<title>comprar</title>
+	`<title>comprar</title>
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="estilos.css">
 	<link rel="stylesheet" href="media-queries.css">
 	
+	<style>
+		
+		.contenedor-item .info-pay-methods{
+			background: #f1f1f1;
+			width: 96%;
+			padding:10px 0;
+			display: block;
+			border-radius: 5px 5px 0 0;
+			margin: 0 auto;
+			display: flex;
+			justify-content:center;
+			flex-wrap:wrap;
+			
+			/*flex-direction:column;*/
+
+		}
+
+		.info-pay-methods .pay-method{
+
+			/*flex:none;*/
+			background: white;
+			margin:5px 10px;
+			width:210px;
+			flex:none;
+			box-shadow: inset 0 0 20px #000;
+			/*cursor: pointer;*/
+			border-radius:4px;
+			
+
+		}
+
+		.info-pay-methods .pay-method .header-method{
+
+			/*border-bottom:3px dashed #f1f1f1;*/
+			padding:8px;
+			background: #0088C7;
+			color:white;
+
+			border-radius: 5px 5px 0 0;
+			position: relative;
+			box-shadow: inset 1px 1px 40px black;
+
+		}
+
+		.info-pay-methods .pay-method .header-method:after{
+
+			content:"";
+			border-left:18px solid transparent;
+			border-right:18px solid transparent;
+			border-top:20px solid #0088C7;
+			border-bottom:20px solid transparent;
+			display: inline-block;
+			margin:0;
+			position: absolute;
+			bottom:-40px;
+			right: 86px;
+
+			
+		}
+
+		.info-pay-methods .pay-method .header-method figure{
+
+			margin:0;
+			width: 90px;
+			height: 90px;
+			margin: 0 auto;
+		}
+		.info-pay-methods .pay-method .header-method figure img{
+
+			margin:0;
+			width: 100%;
+			height: 100%;
+			
+		}
+
+		.info-pay-methods .pay-method .method-description{
+
+			display: none;
+			padding:10px 5px 0 5px;
+
+		}
+
+
+		.acti{display: inline-block;}
+
+	</style>
+		
+	<script>
+		
+	</script>
 </head>
 <body >
 
@@ -30,7 +120,7 @@
 			</ul>
 		</div>
 		
-	<header class="head">
+	<header>
 
 		
 		<div id="vistas" class="centrar-caja">
@@ -45,7 +135,7 @@
 
  		<div class="logo">
  			<figure class="logo-web">
- 				<img src="img/svv.jpg" alt="">
+ 				<img src="svv.jpg" alt="">
  			</figure>
 
  		</div>
@@ -106,7 +196,7 @@
 				<span>Iniciar Sesion</span>
 			</button> -->
 			<figure id="show" class="rounded">
-				<img src="img/man.jpg" class="activo avatar">
+				<img src="man.jpg" class="activo avatar">
 			</figure>
 
 		</div>
@@ -123,7 +213,7 @@
 			<div id="info-usuario">
 				<!-- <h2 style=" color:white; text-align:center; font-family:cursive; font-size:25px; margin:5px; text-shadow:2px 2px 9px #000;">Intellibuy</h2> -->
 				<figure id="logo-usuario">
-					<img src="img/man.jpg" alt="usuario"  />
+					<img src="man.jpg" alt="usuario"  />
 				</figure>
 
 				<h4 class="name-usuario">Raul Michel Ramos</h4>
@@ -245,7 +335,7 @@
 						
 						<span class="cerrar icon-square-cross" data-close>Cerrar</span>
 					</div>
-					<img src="img/promo.png" alt="">
+					<img src="promo.png" alt="">
 				</figure>
 			</div>
 
@@ -299,7 +389,7 @@
 					<div class="info-item">
 
 						<figure class="img-item">
-							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLZJdiO-ADd5s9sQ8dCgexAMIRmK3McNxOTuiWUTbE39UgOSDKIQ" alt="Producto" >
+							<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3-tOyFhYh-xNxvIUjFagJKSuyLvaW8bjB7bZuq5uHw5cjrGC5Rw" alt="Producto" >
 						</figure>
 						<div class="description-item">
 							<h3 class="name-item">Macbook Pro Retina</h3>
@@ -309,9 +399,9 @@
 								<span >$45,200</span>
 							</p>
 							<div class="wrap-creado-por">
-								<p>Por <em>Raul</em></p>
+								<p>Por Mgodinez</p>
 								<figure id="show" class="avatar">
-									<img src="man.jpg" class="activo avatar">
+									<img src="https://pbs.twimg.com/profile_images/3438320673/df0bcdc62353b67417ea5826a0a1df3e_bigger.jpeg" class="activo avatar">
 								</figure>
 							</div>
 							<!-- <p class="estado-producto color-verde">Usado</p> -->
@@ -340,171 +430,57 @@
 
 
 
-				<article class="item-posted item" id="item">
-					<div class="info-item">
+			<article class="info-pay-methods">
 
-						<figure class="img-item">
-							<img src="https://irp-cdn.multiscreensite.com/d75a1713/dms3rep/multi/mobile/Picture1-500x375.jpg" alt="Producto" >
+				<div class="pay-method">
+					<div class="header-method">
+						<h3>Desposito</h3>
+
+						<figure>
+							<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhym0gfYNLWL0NFL312kvH6bD6lpe7UbVzkP0NaxJPFAPEwyU_" alt="">
 						</figure>
-						<div class="description-item">
-							<h3 class="name-item">Macbook Pro Retina</h3>
-							<!-- <p class="categoria-item icon-flecha-circulada">Direccion oeste del Rancho #34
-							</p> -->
-							<span class="precio">$657,000</span>
-							<div class="wrap-creado-por">
-								<p>Por Lorenzo</p>
-								<figure id="show" class="avatar">
-									<img src="https://pbs.twimg.com/profile_images/539910095048433665/Q_azgGIh_bigger.jpeg" class="activo avatar">
-								</figure>
-							</div>
-							<!-- <p class="estado-producto color-verde">Usado</p> -->
-						</div>
 					</div>
-
-					<footer class="item-footer">
-						<div class="actions">
-							<div class="act">
-								<span class="action icon-star">
-									<span>Favoritos</span>
-								</span>
-								<span class="action icon-cog">
-									<span>Recomendar</span>
-								</span>
-								<span class="action icon-cog">13</span>
-							</div>
-							<div class="ago">
-								<span>hace 27 min</span>
-							</div>
+						<div class="method-description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ipsa voluptas sit, unde alias omnis vitae reprehenderit in ad, ab, optio recusandae libero amet dolor. Officia, quidem cum doloremque fugiat?</p>
 						</div>
-					</footer>
-				</article>
+					
+				</div>
 
-				<article class="item-posted item" id="item">
-					<div class="info-item">
-
-						<figure class="img-item">
-							<img src="https://irp-cdn.multiscreensite.com/d75a1713/dms3rep/multi/mobile/Picture1-500x375.jpg" alt="Producto" >
+				<div class="pay-method">
+					<div class="header-method">
+						<h3>Via PAYPAL</h3>
+						<figure>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKo9IVwMEGaZpBWRLqdwFWfw1mn4ulJiJE0cPJRmBaExuvO4ou" alt="">
 						</figure>
-						<div class="description-item">
-							<h3 class="name-item">Macbook Pro Retina</h3>
-							<!-- <p class="categoria-item icon-flecha-circulada">Direccion oeste del Rancho #34
-							</p> -->
-							<span class="precio">$657,000</span>
-							<div class="wrap-creado-por">
-								<p>Por Lorenzo</p>
-								<figure id="show" class="avatar">
-									<img src="https://pbs.twimg.com/profile_images/539910095048433665/Q_azgGIh_bigger.jpeg" class="activo avatar">
-								</figure>
-							</div>
-							<!-- <p class="estado-producto color-verde">Usado</p> -->
-						</div>
 					</div>
-
-					<footer class="item-footer">
-						<div class="actions">
-							<div class="act">
-								<span class="action icon-star">
-									28
-									<span>Favoritos</span>
-								</span>
-								
-								<span class="action icon-cog">13</span>
-							</div>
-							<div class="ago">
-								<span>hace 27 min</span>
-							</div>
+						<div class="method-description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ipsa voluptas sit, unde alias omnis vitae reprehenderit in ad, ab, optio recusandae libero amet dolor. Officia, quidem cum doloremque fugiat?</p>
 						</div>
-					</footer>
-				</article>
+					
+				</div>
 
+				<div class="pay-method">
+					<div class="header-method">
+						<h3>Desposito</h3>
 
-				<article class="item-posted item" id="item">
-					<div class="info-item">
-
-						<figure class="img-item">
-							<img src="http://www.elitehomecleaners.com/images/ftr_car.png" alt="Producto" >
+						<figure>
+							<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhym0gfYNLWL0NFL312kvH6bD6lpe7UbVzkP0NaxJPFAPEwyU_" alt="">
 						</figure>
-						<div class="description-item">
-							<h3 class="name-item">Macbook Pro Retina 13"</h3>
-						<!-- <p class="categoria-item icon-flecha-circulada" id="fr"> Vendo mi compu esta como nueva cualquier reclamacion y les devuelvo su dinero </p> -->
-							<span class="precio">$57,000</span>
-							<div class="wrap-creado-por">
-								<p>Por <em>Javier</em></p>
-								<figure id="show" class="avatar">
-									<img src="https://pbs.twimg.com/profile_images/573290423235448832/IxcV9bJI_bigger.jpeg" class="activo avatar">
-								</figure>
-							</div>
-							<!-- <p class="estado-producto color-verde">Usado</p> -->
-						</div>
 					</div>
-
-					<footer class="item-footer">
-						<div class="actions">
-							<div class="act">
-								<span class="action icon-star">
-									<span>0</span>
-								</span>
-								<span class="action icon-cog">
-									<span>0</span>
-								</span>
-								<span class="action icon-search">
-									<span>0</span>
-								</span>
-							</div>
-							<div class="ago">
-								<span>hace 27 min</span>
-							</div>
+						<div class="method-description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ipsa voluptas sit, unde alias omnis vitae reprehenderit in ad, ab, optio recusandae libero amet dolor. Officia, quidem cum doloremque fugiat?</p>
 						</div>
-					</footer>
-				</article>
-
-
-				<article class="item-posted item" id="item">
-					<div class="info-item">
-
-						<figure class="img-item">
-							<img src="http://www.misterkleen.com/wp-content/uploads/2013/04/17-TMFJBRES.jpg" alt="Producto" >
-						</figure>
-						<div class="description-item">
-							<h3 class="name-item">Macbook Pro Retina ehy bsvfyb ssbsg 12</h3>
-							<!-- <p class="categoria-item icon-flecha-circulada">Direccion oeste del Rancho #34
-							</p> -->
-							<span class="precio">$657,000</span>
-							<div class="wrap-creado-por">
-								<p>Por Mgodinez</p>
-								<figure id="show" class="avatar">
-									<img src="man.jpg" class="activo avatar">
-								</figure>
-							</div>
-							<!-- <p class="estado-producto color-verde">Usado</p> -->
-						</div>
-					</div>
-
-					<footer class="item-footer">
-						<div class="actions">
-							<div class="act">
-								<span class="action icon-star">
-									<span>Favoritos</span>
-								</span>
-								<span class="action icon-cog">
-									<span>Recomendar</span>
-								</span>
-								<span class="action icon-search">13</span>
-							</div>
-							<div class="ago">
-								<span>hace 27 min</span>
-							</div>
-						</div>
-					</footer>
-				</article>
-
-
-
-		
-
+					
+				</div>
+			</article>
 
 				
-
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
 
 		</section>
 
@@ -657,17 +633,14 @@
 	<script src="hammer.js"></script>
 	<script src="main.js"></script>
 	<script>
-		window.onload = function(){
-
-			console.log("Ya se disparo el evento on load")
-		}
+	
 
 		$( function(){
 
 			console.log("ya se disparo en evento dom loaded");
 		});
 
-		
+		$('.pay-method').on('click',function(){$('.method-description').slideToggle();})
 	</script>
 
 

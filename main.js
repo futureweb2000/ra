@@ -92,7 +92,8 @@
 //     // Animation complete.
 //   });
 // });
-
+$('[data-vender]').on('click', function(){alert("yes");})
+		
 		$("#v1").click(function(){
 			$(".item-posted").addClass("item");
 			$(".item-posted").removeClass("v2");
@@ -115,8 +116,10 @@
 			
 		}
 
+
 		function ocultarMenu(){
-			$menu.classList.remove("menu-mostrado");
+			$("canvas_menu").removeClass("menu-mostrado");
+			
 			
 		}
 

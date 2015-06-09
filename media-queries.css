@@ -79,12 +79,16 @@
 */
 
 
+
 @media screen and (min-width:750px){
 
 	header{
 		position: fixed;
 		top:0;
 		display: flex;
+		padding:5px 0;
+ 		z-index: 3;
+
 		justify-content:space-between;
 		
 	}
@@ -96,7 +100,7 @@
 	header #nav1{
 
 		border-top: 0;
-		width: 230px;
+		width: 300px;
 		/*background: red;*/
 		display: flex;
 		justify-content:flex-end;
@@ -117,17 +121,18 @@
 
 		display:  none;
 	}
-	header #nav1 .item-nav[data-button] div{
+	header #nav1 .item-nav[data-vender] div{
 
 		display:none;
 	}
-	header #nav1 .item-nav[data-button]{
+	header #nav1 .item-nav[data-vender]{
 		position: relative;
 		top:-5px;
 	}
-	header #nav1 .item-nav[data-button] a{
+	header #nav1 .item-nav[data-vender] a{
 
 		color:#CC181E;
+		display: block;
 		font-weight: 600;
 		border: 1px solid #d3d3d3;
 		background: #f8f8f8;
@@ -188,11 +193,10 @@
 		display:  none;
 	}
 	.canvas_menu{
-
-	  left :0px;
-	 	width: 14rem;
+		left :0px;
+	 	/*width: 14rem;*/
 	 	top:3.1em;
-	 	box-shadow: none;
+	 	box-shadow:0px;
 
 	}
 	
@@ -232,15 +236,16 @@
 	header #nav2 figure{
 
 		margin:0;
+		padding-right: 110px;
 	}
 
-	.contenedor-item{
+	.contenedor-principal{
 
-		width: 60.5%;
-		margin-left: 230px;
+		/*width: 60.5%;*/
+		/*margin-left: 230px;*/
 	}
 
-	.anuncios-wrap{
+	.main aside{
 		display: block;
 	}
 

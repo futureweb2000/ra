@@ -1,0 +1,83 @@
+.header {
+  border: 1px solid #f00;
+  display: block;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  background: #05558d;
+  margin-bottom: 10px;
+}
+.main {
+  border: 1px solid #008000;
+  display: flex;
+  justify-content: space-between;
+}
+.main .canvas {
+  background: #fff;
+  width: 250px;
+  flex: none;
+  position: absolute;
+  left: -190px;
+  transition: 0.4s;
+  border: 2px solid #008000;
+  margin-top: 50px;
+}
+.main .canvas:hover {
+  left: 0;
+}
+.main .canvas .cont {
+  background: #f00;
+  width: auto;
+  width: 245px;
+}
+.main .principal {
+  border: 2px solid #ff0;
+  width: 98%;
+  height: 2000px;
+  margin-top: 50px;
+}
+.main .publicidad {
+  width: 225px;
+  flex: none;
+  margin-top: 50px;
+}
+.main .publicidad .cont {
+  width: auto;
+  position: fixed;
+  width: 225px;
+}
+.main .publicidad .cont aside {
+  flex: none;
+}
+.main .publicidad .cont aside .anuncios-wrap {
+  border-radius: 0 0 0 0.5rem;
+  border: 1px solid #d3d3d3;
+  font-size: 12px;
+}
+.main .publicidad .cont aside .anuncios-wrap .anuncio-item {
+  color: #000;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 5px 0;
+}
+.main .publicidad .cont aside .anuncios-wrap .anuncio-item .title {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.main .publicidad .cont aside .anuncios-wrap .anuncio-item .liga a {
+  color: rojito;
+}
+.main .publicidad .cont aside .anuncios-wrap .anuncio-item .liga a:hover {
+  text-decoration: underline;
+}
+.main .publicidad .cont aside .anuncios-wrap .anuncio-item .img-anuncio {
+  width: 98%;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main .publicidad .cont aside .anuncios-wrap .anuncio-item .img-anuncio img {
+  width: 100%;
+  height: 125px;
+}
